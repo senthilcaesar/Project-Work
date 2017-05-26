@@ -3,7 +3,7 @@
 # --------------------------------------------------------------
 # Author:		      Senthil Palanivelu                 
 # Written:		    05/18/2017                             
-# Last Updated: 	05/25/2017
+# Last Updated: 	05/26/2017
 # Purpose:  		  Generate graph for GHPCC usage metrics
 # --------------------------------------------------------------
 
@@ -35,8 +35,6 @@ my_xticks = []
 plt.xlabel('Time')
 plt.ylabel('% Percentage')
 
-# -------------------------------------------------------------------------------------------------------------------------------------------------------------#
-
 #-------------------------------------------------------------------Main Program-------------------------------------------------------------------------------#
 
 # Date, Time and Year
@@ -53,16 +51,23 @@ index_p = 0
 num     = 1
 
 # Empty dictionary
-my_dict = {}
+my_dict        = {}    # This dict stores the user_name as key and CPU % as values
+my_dict_legend = {}    # This dict stores the user_name key and CPU hrs as values
+my_dict_sort   = {}    # This dict sotres the user_name key and the total cpu hours as values
 
 # Dictionary of users list ( Key is the username and each value associated with the key is a list )
 # my_dict Data Structure is similar to Array of Linked List data structure in Java
 my_dict.update({'umb_jason_green': 'x1', 'umb_zhongping_lee': 'x2', 'umb_todd_riley': 'x3', 'umb_jill_macoska': 'x4', 'umb_bala_sundaram': 'x5',
-                'umb_crystal_schaaf': 'x5', 'umb_bela_torok': 'x6'})
+                'umb_crystal_schaaf': 'x5', 'umb_bela_torok': 'x6', 'umb_nurit_haspel': 'x7'})
+
+my_dict_legend.update(my_dict)
 
 # Initiating the list for each user inside the dictionary
 for key in my_dict:
     my_dict[key] = []
+
+for keyl in my_dict_legend:
+    my_dict_legend[keyl] = []
 
 print "Generating Graph for the specified months"
 print "-------------------------------------------"
@@ -83,7 +88,7 @@ while count <= int(myData):
        # Filter user data and create .dat output file
        file_name = 'Report.' + str(prev_month_name) + '_' + str(start_year)
        if os.path.isfile(file_name):
-                cmd         = "cat " + file_name + "|" + "sed -e 1,/Account/d" + "|" + "grep umb" + "|" + "sed 's/\%//g'" + "|" + "awk '$3 > 1'" + "|" "awk '{print $1,$3}'"
+                cmd         = "cat " + file_name + "|" + "sed -e 1,/Account/d" + "|" + "grep umb" + "|" + "sed 's/\%//g'" + "|" + "awk '$3 > 1'" + "|" "awk '{print $1,$2,$3}'"
                 output      = commands.getstatusoutput(cmd)
                 output_file = file_name + '.dat'
                 f           = open(output_file, 'w')
@@ -101,12 +106,17 @@ while count <= int(myData):
              for line in data:
                   line      = line.split()
                   user_name = line[0]
-                  my_dict[user_name].append(line[1])
+                  my_dict[user_name].append(line[2])
+                  my_dict_legend[user_name].append(int(line[1]))
 
        # Add '0' If the users usage not found during specific month ( Null value is required to plot the graph )
        for key in my_dict:
            if len(my_dict[key]) < count - 1:
                   my_dict[key].append(0)
+
+       for keyl in my_dict_legend:
+           if len(my_dict_legend[keyl]) < count - 1:
+                  my_dict_legend[keyl].append(0)
 
 print "-------------------------------------------"
 
@@ -114,10 +124,21 @@ print "-------------------------------------------"
 for d in my_dict:
     my_dict[d].reverse()
 
-# Un-comment the below for Troubleshooting
-# print my_dict
+# 
+for key_s in my_dict_legend:
+           total = sum(my_dict_legend[key_s])
+           my_dict_sort[key_s] = total
 
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#------------------------- ---------------------------------------------Troubleshooting---------------------------------------------------------------------------#
+
+# print my_dict
+# print my_dict_legend
+# print my_dict_sort
+# result = sorted(my_dict_sort.items(), key=lambda t: t[1], reverse=True)
+# for k,v in result:
+#    print k,v
+# maximum = max(my_dict_sort, key=my_dict_sort.get)  # Just use 'min' instead of 'max' for minimum.
+# print(maximum, my_dict_sort[maximum])
 
 # -------------------------------------------------------------------- Plotting Graph ------------------------------------------------------------------------------#
 
@@ -128,12 +149,17 @@ my_xticks.reverse()
 plt.xticks(x, my_xticks)
 
 # Plot graph and legend
+# key_l    is the key from the my_dict_sort dictionary in descending order
+# bool_val is checked if the list is full of zero's
 for key in my_dict:
-   # To check whether the user's list is full of zero's
-   bool_val     = all(v == 0 for v in my_dict[key])
-   if bool_val == False:
-           plot          = plt.plot(x, my_dict[key], marker='o', label = key)
-           plt.legend(loc='upper left')
+    result = sorted(my_dict_sort.items(), key=lambda t: t[1], reverse=True)
+    bool_val     = all(v == 0 for v in my_dict[key])
+    if bool_val == False:
+        for key_l,v in result:
+            plot = plt.plot(x, my_dict[key_l], marker='o', label = key_l + " ( " + str(v) + " hrs ) ")
+            del my_dict_sort[key_l]
+            plt.legend(loc='upper left', title='Total UMB CPU Hours', fancybox=True, prop={'size':16})
+            break
 
 # Set Graph Title
 plt.suptitle("HPCC Metrics Graph (" + my_xticks[0] + " - " + my_xticks[-1] + ")", size=16)
@@ -141,4 +167,3 @@ plt.suptitle("HPCC Metrics Graph (" + my_xticks[0] + " - " + my_xticks[-1] + ")"
 # Display Graph
 plt.grid()
 plt.show()
-
