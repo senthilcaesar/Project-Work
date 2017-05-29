@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
 # --------------------------------------------------------------
-# Author:		      Senthil Palanivelu                 
-# Written:		    05/18/2017                             
-# Last Updated: 	05/26/2017
-# Purpose:  		  Generate graph for GHPCC usage metrics
+# Author:		UMB_Research_Computing                 
+# Written:		05/18/2017                             
+# Last Updated: 	05/29/2017
+# Purpose:  		Generate graph for GHPCC usage metrics
 # --------------------------------------------------------------
 
 import os
@@ -46,32 +46,19 @@ start_year    = now.year
 month_arr = ['00', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 # Variables
-count   = 1
-index_p = 0
-num     = 1
-
-# Empty dictionary
+count          = 1
+index_p        = 0
+num            = 1
+r_arr_length   = 2
 my_dict        = {}    # This dict stores the user_name as key and CPU % as values
 my_dict_legend = {}    # This dict stores the user_name key and CPU hrs as values
 my_dict_sort   = {}    # This dict sotres the user_name key and the total cpu hours as values
-
-# Dictionary of users list ( Key is the username and each value associated with the key is a list )
-# my_dict Data Structure is similar to Array of Linked List data structure in Java
-my_dict.update({'umb_jason_green': 'x1', 'umb_zhongping_lee': 'x2', 'umb_todd_riley': 'x3', 'umb_jill_macoska': 'x4', 'umb_bala_sundaram': 'x5',
-                'umb_crystal_schaaf': 'x5', 'umb_bela_torok': 'x6', 'umb_nurit_haspel': 'x7'})
-
-my_dict_legend.update(my_dict)
-
-# Initiating the list for each user inside the dictionary
-for key in my_dict:
-    my_dict[key] = []
-
-for keyl in my_dict_legend:
-    my_dict_legend[keyl] = []
+report_list    = []    # This list stores the report names
+                       # my_dict Data Structure is similar to Array of Linked List data structure in Java
 
 print "Generating Graph for the specified months"
 print "-------------------------------------------"
-while count <= int(myData):
+while count <= int(myData):                                 # Start of while loop
        curr_month_name   = month_arr[current_month]
        prev_month_number = current_month - count - index_p
 
@@ -100,37 +87,60 @@ while count <= int(myData):
                 print file_name + ' file Not found !'
                 print 'Error_exit'
                 sys.exit()
+      
 
-       # Appending the usage to each user's list in dictionary
-       with open(output_file) as data:
-             for line in data:
-                  line      = line.split()
-                  user_name = line[0]
-                  my_dict[user_name].append(line[2])
-                  my_dict_legend[user_name].append(int(line[1]))
+       report_list.append(output_file)
 
-       # Add '0' If the users usage not found during specific month ( Null value is required to plot the graph )
-       for key in my_dict:
-           if len(my_dict[key]) < count - 1:
-                  my_dict[key].append(0)
+       # Dynamically add users into the dictionary by reading each file
+       with open(output_file) as user_data:
+                 for line in user_data:
+                          line = line.split()
+                          name = line[0]
+                          value_text = name.partition("_")[2]
+                          my_dict.update({name: value_text}) 
 
-       for keyl in my_dict_legend:
-           if len(my_dict_legend[keyl]) < count - 1:
-                  my_dict_legend[keyl].append(0)
+print "-------------------------------------------"        # End of while loop
 
-print "-------------------------------------------"
+my_dict_legend.update(my_dict)
+                
+# Initiating the list for each user inside the dictionary  
+for key in my_dict:
+    my_dict[key] = []
 
+for keyl in my_dict_legend:
+    my_dict_legend[keyl] = []
+
+# Appending the usage to each user's list in dictionary
+for output_file in report_list:
+    with open(output_file) as data:
+         for line in data:
+             line      = line.split()
+             user_name = line[0]
+             my_dict[user_name].append(line[2])
+             my_dict_legend[user_name].append(int(line[1]))
+
+         # Add '0' If the users usage not found during specific month ( Null value is required to plot the graph )
+         for key in my_dict:
+             if len(my_dict[key]) < r_arr_length - 1:
+                   my_dict[key].append(0)
+
+         for keyl in my_dict_legend:
+             if len(my_dict_legend[keyl]) < r_arr_length - 1:
+                   my_dict_legend[keyl].append(0)
+
+         r_arr_length += 1
+       
 # Reverse all the list inside the dictionary
 for d in my_dict:
     my_dict[d].reverse()
 
-# 
+# calculate the total CPU hours for each user and add it to my_dict_sort
 for key_s in my_dict_legend:
            total = sum(my_dict_legend[key_s])
            my_dict_sort[key_s] = total
 
 #------------------------- ---------------------------------------------Troubleshooting---------------------------------------------------------------------------#
-
+#
 # print my_dict
 # print my_dict_legend
 # print my_dict_sort
@@ -139,7 +149,7 @@ for key_s in my_dict_legend:
 #    print k,v
 # maximum = max(my_dict_sort, key=my_dict_sort.get)  # Just use 'min' instead of 'max' for minimum.
 # print(maximum, my_dict_sort[maximum])
-
+#
 # -------------------------------------------------------------------- Plotting Graph ------------------------------------------------------------------------------#
 
 # Reversing the list of months
@@ -152,7 +162,7 @@ plt.xticks(x, my_xticks)
 # key_l    is the key from the my_dict_sort dictionary in descending order
 # bool_val is checked if the list is full of zero's
 for key in my_dict:
-    result = sorted(my_dict_sort.items(), key=lambda t: t[1], reverse=True)
+    result       = sorted(my_dict_sort.items(), key=lambda t: t[1], reverse=True)
     bool_val     = all(v == 0 for v in my_dict[key])
     if bool_val == False:
         for key_l,v in result:
