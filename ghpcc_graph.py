@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # --------------------------------------------------------------
-# Author:		UMB_Research_Computing                 
+# Author:		Senthil Palanivelu                 
 # Written:		05/18/2017                             
 # Last Updated: 	05/29/2017
 # Purpose:  		Generate graph for GHPCC usage metrics
