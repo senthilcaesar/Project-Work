@@ -3,7 +3,7 @@
 # --------------------------------------------------------------
 # Author:		Senthil Palanivelu                 
 # Written:		05/18/2017                             
-# Last Updated: 	05/29/2017
+# Last Updated: 	05/30/2017
 # Purpose:  		Generate graph for GHPCC usage metrics
 # --------------------------------------------------------------
 
@@ -34,6 +34,34 @@ my_xticks = []
 # X and Y axis title
 plt.xlabel('Time')
 plt.ylabel('% Percentage')
+
+#----------------------------------------------------------------------Functions-------------------------------------------------------------------------------#
+
+def append_zero(my_dict):
+      for key in my_dict:
+          if len(my_dict[key]) < r_arr_length - 1:
+                 my_dict[key].append(0)
+
+def list_initiate(my_dict):
+      for key in my_dict:
+          my_dict[key] = []
+       
+def add_to_dict_dynamic(output_file):
+        with open(output_file) as user_data:
+                      for line in user_data:
+                            line = line.split()
+                            name = line[0]
+                            value_text = name.partition("_")[2]
+                            my_dict.update({name: value_text}) 
+
+def dict_reverse(my_dict):
+      for d in my_dict:
+           my_dict[d].reverse()
+
+def total_cpu(my_dict_legend):
+      for key_s in my_dict_legend:
+              total = sum(my_dict_legend[key_s])
+              my_dict_sort[key_s] = total
 
 #-------------------------------------------------------------------Main Program-------------------------------------------------------------------------------#
 
@@ -88,27 +116,14 @@ while count <= int(myData):                                 # Start of while loo
                 print 'Error_exit'
                 sys.exit()
       
-
        report_list.append(output_file)
-
-       # Dynamically add users into the dictionary by reading each file
-       with open(output_file) as user_data:
-                 for line in user_data:
-                          line = line.split()
-                          name = line[0]
-                          value_text = name.partition("_")[2]
-                          my_dict.update({name: value_text}) 
+       add_to_dict_dynamic(output_file)
 
 print "-------------------------------------------"        # End of while loop
 
 my_dict_legend.update(my_dict)
-                
-# Initiating the list for each user inside the dictionary  
-for key in my_dict:
-    my_dict[key] = []
-
-for keyl in my_dict_legend:
-    my_dict_legend[keyl] = []
+list_initiate(my_dict)
+list_initiate(my_dict_legend)
 
 # Appending the usage to each user's list in dictionary
 for output_file in report_list:
@@ -120,24 +135,15 @@ for output_file in report_list:
              my_dict_legend[user_name].append(int(line[1]))
 
          # Add '0' If the users usage not found during specific month ( Null value is required to plot the graph )
-         for key in my_dict:
-             if len(my_dict[key]) < r_arr_length - 1:
-                   my_dict[key].append(0)
-
-         for keyl in my_dict_legend:
-             if len(my_dict_legend[keyl]) < r_arr_length - 1:
-                   my_dict_legend[keyl].append(0)
-
+         append_zero(my_dict)
+         append_zero(my_dict_legend)
          r_arr_length += 1
        
 # Reverse all the list inside the dictionary
-for d in my_dict:
-    my_dict[d].reverse()
+dict_reverse(my_dict)
 
 # calculate the total CPU hours for each user and add it to my_dict_sort
-for key_s in my_dict_legend:
-           total = sum(my_dict_legend[key_s])
-           my_dict_sort[key_s] = total
+total_cpu(my_dict_legend)
 
 #------------------------- ---------------------------------------------Troubleshooting---------------------------------------------------------------------------#
 #
