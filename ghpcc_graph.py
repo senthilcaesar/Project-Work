@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 # --------------------------------------------------------------
-# Author:		Senthil Palanivelu                 
+# Author:		Senthil Palanivelu                
 # Written:		05/18/2017                             
-# Last Updated: 	05/30/2017
+# Last Updated: 	06/01/2017
 # Purpose:  		Generate graph for GHPCC usage metrics
 # --------------------------------------------------------------
 
@@ -78,6 +78,7 @@ count          = 1
 index_p        = 0
 num            = 1
 r_arr_length   = 2
+color          = 1
 my_dict        = {}    # This dict stores the user_name as key and CPU % as values
 my_dict_legend = {}    # This dict stores the user_name key and CPU hrs as values
 my_dict_sort   = {}    # This dict sotres the user_name key and the total cpu hours as values
@@ -172,13 +173,17 @@ for key in my_dict:
     bool_val     = all(v == 0 for v in my_dict[key])
     if bool_val == False:
         for key_l,v in result:
-            plot = plt.plot(x, my_dict[key_l], marker='o', label = key_l + " ( " + str(v) + " hrs ) ")
+            if color <= 7:
+               plot = plt.plot(x, my_dict[key_l], marker='o', label = key_l + " ( " + str(v) + " hrs ) ")
+            else:
+               plot = plt.plot(x, my_dict[key_l], marker='o', linestyle='--', label = key_l + " ( " + str(v) + " hrs ) ")
+            color += 1
             del my_dict_sort[key_l]
             plt.legend(loc='upper left', title='Total UMB CPU Hours', fancybox=True, prop={'size':16})
             break
 
 # Set Graph Title
-plt.suptitle("HPCC Metrics Graph (" + my_xticks[0] + " - " + my_xticks[-1] + ")", size=16)
+plt.suptitle("GHPCC Metrics Graph (" + my_xticks[0] + " - " + my_xticks[-1] + ")", size=16)
 
 # Display Graph
 plt.grid()
