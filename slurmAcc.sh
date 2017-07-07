@@ -35,7 +35,6 @@ cd '/tmp/accounting'
 
 # Accounting Filenames as YYYYMMDD
 MONTHNUMBER=${CURRENT_YEAR}${PREVIOUS_MONTH}
-MONTHFILES=${CURRENT_YEAR}${PREVIOUS_MONTH}??
 TMPFILE="$(mktemp)"
 echo > ${TMPFILE}
 FILE_TMP="$(mktemp)"
