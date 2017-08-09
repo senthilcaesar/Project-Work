@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --------------------------------------------------------------
-# Author:		UMB_RESEARCH_COMPUTING                
+# Author:		Senthil Palanivelu                
 # Written:		08/02/2017                             
 # Last Updated: 	08/07/2017
 # Purpose:  		List of switch and associated ports
