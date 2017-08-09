@@ -2,8 +2,8 @@
 
 # --------------------------------------------------------------
 # Author:		UMB_RESEARCH_COMPUTING                
-# Written:		07/28/2017                             
-# Last Updated: 	07/31/2017
+# Written:		08/02/2017                             
+# Last Updated: 	08/07/2017
 # Purpose:  		List of switch and associated ports
 # --------------------------------------------------------------
 
