@@ -1,5 +1,7 @@
+#!/bin/bash
+
 # --------------------------------------------------------------
-# Author:		Senthil Palanivelu                
+# Author:		Senthil Palanivelu              
 # Written:		06/19/2017                             
 # Last Updated: 	06/28/2017
 # Purpose:  		CPU Share usage
@@ -9,12 +11,13 @@ num="0.0"
 TMPFILE="$(mktemp)"
 FILE_TMP="$(mktemp)"
 
-file_name=tmp_file_
+file_name=tmp_file
 time=`date | awk '{print $4}' | cut -c 1-5`
 month=`date | awk '{print $2}'`
 day=`date | awk '{print $3}'`
 
-cpu_file=${file_name}${month}${day}_${time}
+#cpu_file=${file_name}${month}${day}_${time}
+cpu_file=${file_name}
 touch $cpu_file
 
 total_umass_cpu=`bqueues -r long | awk '/^SHARED_TOP/{c=1} c&&c--' | awk '{print $6}'`
@@ -50,7 +53,7 @@ cat ${FILE_TMP} | while read line
 
 # Percentage of CPU Utilized by UMB Users
 echo >> ${cpu_file}
-echo "Percentage of CPU Utilized by UMB Users" >> ${cpu_file}
+echo "Percentage of CPU Utilized by UMB PI's" >> ${cpu_file}
 echo "---------------------------------------" >> ${cpu_file}
 total_umass_boston_cpu=`cat ${TMPFILE} | grep -i boston | awk '{print $2}'`
 cat ${FILE_TMP} | while read line
@@ -75,3 +78,6 @@ cat ${TMPFILE} | while read line
                       printf "%-28s %0s\n" ${c[0]} $value"%" >> ${cpu_file}
                 done
 echo >> ${cpu_file}
+
+# Setting file permission
+chmod 755 ${cpu_file}
