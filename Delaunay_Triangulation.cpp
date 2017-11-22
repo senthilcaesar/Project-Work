@@ -19,26 +19,26 @@ using namespace std;
 // Main Kernel Class
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 // Instantiating with Kernel Inorder to access the Objects and Predicate functions of the kernel
-typedef CGAL::Triangulation_vertex_base_3<K>							vbl;
-typedef CGAL::Triangulation_cell_base_3<K>								cb;
+typedef CGAL::Triangulation_vertex_base_3<K>				vbl;
+typedef CGAL::Triangulation_cell_base_3<K>				cb;
 // Custom class to add Global Index to each vertices
-typedef CGAL::Triangulation_vertex_base_with_info_3<unsigned, K>		vb;
+typedef CGAL::Triangulation_vertex_base_with_info_3<unsigned, K>	vb;
 // This DS class requires 2 parameters to be passed which are VERTEX class and CELL class
-typedef CGAL::Triangulation_data_structure_3<vb, cb>					Tds;
+typedef CGAL::Triangulation_data_structure_3<vb, cb>		        Tds;
 // This Triangulation class generally requires 2 parameters, one trait class and another Data structure class
-typedef CGAL::Delaunay_triangulation_3<K, Tds>							DTriangle_3;
-typedef DTriangle_3::Point												Point_3;
-typedef CGAL::Polyhedron_3<K>											Polyhedron;
+typedef CGAL::Delaunay_triangulation_3<K, Tds>				DTriangle_3;
+typedef DTriangle_3::Point						Point_3;
+typedef CGAL::Polyhedron_3<K>						Polyhedron;
 
 // K Simplex Iterators
 DTriangle_3::Finite_cells_iterator					cit;
-DTriangle_3::Finite_vertices_iterator				vit;
+DTriangle_3::Finite_vertices_iterator				        vit;
 DTriangle_3::Finite_edges_iterator					eit;
 DTriangle_3::Finite_facets_iterator					fit;
 
 // Handles
-DTriangle_3::Cell_handle							ch;
-DTriangle_3::Vertex_handle							vh;
+DTriangle_3::Cell_handle						ch;
+DTriangle_3::Vertex_handle						vh;
 
 int main() {
 
