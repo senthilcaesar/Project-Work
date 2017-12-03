@@ -1,11 +1,9 @@
-#!/bin/bash
-
-# --------------------------------------------------------------
-# Author:		Senthil Palanivelu              
-# Written:		11/20/2017                             
-# Last Updated: 	12/03/2017
-# Purpose:  		To calcuate Dihedral angle and Matrix Rotation
-# --------------------------------------------------------------
+% --------------------------------------------------------------
+% Author:		Senthil Palanivelu              
+% Written:		11/20/2017                             
+% Last Updated: 	12/03/2017
+% Purpose:  		To calcuate Dihedral angle and Matrix Rotation
+% --------------------------------------------------------------
 
 Input_file = ('C:\Users\toshiba\Desktop\612 - Nurit\Hw4\coordinates.txt');
 cartesian_coordinates = textread(Input_file, '%f');
