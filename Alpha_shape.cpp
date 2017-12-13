@@ -6,23 +6,23 @@
 #include <vector>
 #include <cassert>
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
-typedef CGAL::Alpha_shape_vertex_base_3<K>               Vb;
-typedef CGAL::Alpha_shape_cell_base_3<K>                 Fb;
-typedef CGAL::Triangulation_data_structure_3<Vb,Fb>      Tds;
+typedef CGAL::Alpha_shape_vertex_base_3<K>                  Vb;
+typedef CGAL::Alpha_shape_cell_base_3<K>                    Fb;
+typedef CGAL::Triangulation_data_structure_3<Vb,Fb>         Tds;
 typedef CGAL::Delaunay_triangulation_3<K,Tds,CGAL::Fast_location>  Delaunay;
-typedef CGAL::Alpha_shape_3<Delaunay>                    Alpha_shape_3;
-typedef K::Point_3					 Point;
-typedef Alpha_shape_3::Alpha_iterator			 Alpha_iterator;
-typedef Alpha_shape_3::NT				 NT;
+typedef CGAL::Alpha_shape_3<Delaunay>                       Alpha_shape_3;
+typedef K::Point_3					    Point;
+typedef Alpha_shape_3::Alpha_iterator			    Alpha_iterator;
+typedef Alpha_shape_3::NT				    NT;
 using namespace std;
 
-typedef K::Point_3							Point;
-typedef Alpha_shape_3::Alpha_iterator					Alpha_iterator;
-typedef Alpha_shape_3::Cell_handle					Cell_handle;
-typedef Alpha_shape_3::Vertex_handle					Vertex_handle;
-typedef Alpha_shape_3::Facet						Facet;
-typedef Alpha_shape_3::Edge						Edge;
-typedef std::pair<Point, int>						PointWithIndex;
+typedef K::Point_3					    Point;
+typedef Alpha_shape_3::Alpha_iterator			    Alpha_iterator;
+typedef Alpha_shape_3::Cell_handle			    Cell_handle;
+typedef Alpha_shape_3::Vertex_handle			    Vertex_handle;
+typedef Alpha_shape_3::Facet				    Facet;
+typedef Alpha_shape_3::Edge				    Edge;
+typedef std::pair<Point, int>				    PointWithIndex;
 
 int match_index(Point match, list<Vertex_handle> V) {
 	int i = 0;
