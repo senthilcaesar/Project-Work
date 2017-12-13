@@ -11,19 +11,18 @@ typedef CGAL::Alpha_shape_cell_base_3<K>                 Fb;
 typedef CGAL::Triangulation_data_structure_3<Vb,Fb>      Tds;
 typedef CGAL::Delaunay_triangulation_3<K,Tds,CGAL::Fast_location>  Delaunay;
 typedef CGAL::Alpha_shape_3<Delaunay>                    Alpha_shape_3;
-typedef K::Point_3										Point;
-typedef Alpha_shape_3::Alpha_iterator					Alpha_iterator;
-typedef Alpha_shape_3::NT								NT;
+typedef K::Point_3					 Point;
+typedef Alpha_shape_3::Alpha_iterator			 Alpha_iterator;
+typedef Alpha_shape_3::NT				 NT;
 using namespace std;
 
-typedef K::Point_3										Point;
+typedef K::Point_3							Point;
 typedef Alpha_shape_3::Alpha_iterator					Alpha_iterator;
-typedef Alpha_shape_3::Cell_handle						Cell_handle;
+typedef Alpha_shape_3::Cell_handle					Cell_handle;
 typedef Alpha_shape_3::Vertex_handle					Vertex_handle;
-typedef Alpha_shape_3::Facet							Facet;
-typedef Alpha_shape_3::Edge								Edge;
-
-typedef std::pair<Point, int>							PointWithIndex;
+typedef Alpha_shape_3::Facet						Facet;
+typedef Alpha_shape_3::Edge						Edge;
+typedef std::pair<Point, int>						PointWithIndex;
 
 int match_index(Point match, list<Vertex_handle> V) {
 	int i = 0;
@@ -39,8 +38,8 @@ int match_index(Point match, list<Vertex_handle> V) {
 int main() {
 
     std::ifstream is("2omz.xyz");
-  	std::istream_iterator<Point> start(is), end;
-	std::vector<Point> V(start, end);
+    std::istream_iterator<Point> start(is), end;
+    std::vector<Point> V(start, end);
     Delaunay dt(V.begin(), V.end());
   
   
@@ -70,8 +69,8 @@ int main() {
 
 	std::list<Vertex_handle>	vertices;
 	std::list<Cell_handle>		cells;
-	std::list<Facet>			facets;
-	std::list<Edge>				edges;
+	std::list<Facet>		facets;
+	std::list<Edge>			edges;
 
 
 	as.get_alpha_shape_vertices(std::back_inserter(vertices), Alpha_shape_3::REGULAR);
