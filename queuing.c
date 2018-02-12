@@ -136,7 +136,6 @@ while(*threshold){
     printf("Front = %d and size = %d  and rear = %d and Threshold = %d\n", *front, size, *rear, *threshold);
     if(*front == size) {some[0]=&var[0]; *threshold = 0;}
     if(*front > *rear) {
-        pthread_mutex_lock( &lockmutex);
         printf("No customer in queue , waiting for signal from Thread 1\n");
         pthread_cond_wait( &empty, &lockmutex);
         printf("Conditional signal Received\n");
@@ -165,8 +164,9 @@ while(*threshold){
         Sleep_mu(service_time);
         queue_array[*front-1].ST = service_time;
         *avg_ST = queue_array[*front -1].ST + *avg_ST;
+         pthread_mutex_unlock( &lockmutex);
     }
-        pthread_mutex_unlock( &lockmutex);
+       
   }
         /* End of While loop*/
         gettimeofday(&ut2, NULL);
