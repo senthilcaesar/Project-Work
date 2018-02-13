@@ -232,7 +232,9 @@ pthread_attr_t attr;
     }
   }
 
-if(lambda > mu*no_server){printf("System is Unstable\n"); exit(0);}
+if(no_server == 0){no_server = 1;}
+if(lambda >= mu*no_server){printf("System is Unstable\n"); exit(0);}
+if(no_server > 5){printf("No of server should be between 1 and 5\n"); exit(0);}
 
 /* Initialize mutex and condition variable objects */
 pthread_mutex_init( &lockmutex, NULL);
