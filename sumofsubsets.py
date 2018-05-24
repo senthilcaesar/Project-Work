@@ -29,4 +29,4 @@ def backtrack(total, arr, num):
 arr = [2, 4, 6, 10]
 num = 16
 nsets = backtrack(0, arr, num)
-print("No of subsets with sum equal to", num, " = ", nset
+print("No of subsets with sum equal to", num, " = ", nset)
