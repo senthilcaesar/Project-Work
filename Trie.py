@@ -13,9 +13,6 @@ class Trie:
             node.prefixCount += 1
         node.isFinal = True
     
-    def printTrie(self):
-            print("Okay")
-    
     def query(self, word):
         node = self.root
         words = list(word)
