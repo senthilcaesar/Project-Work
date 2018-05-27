@@ -12,6 +12,30 @@ def palindrome(x):
         j -= 1
     return True
 
+def Longest_common_prefix(given):
+    prefix = {}
+    for string in given:
+        length = len(string)
+        for i in range(0, length):
+            key = string[0:i+1]
+            if key in prefix:
+                prefix[key] += 1
+            else:
+                prefix[key] = 1
+            
+    longest_common_p = ''
+    for key in prefix:
+       longest = 0   
+       if prefix[key] == len(given):
+           if len(key) > longest:
+               longest = len(key)
+               longest_common_p = key
+            
+    if len(longest_common_p) > 0:
+        print("Longest common prefix in", given, " = ", longest_common_p)
+    else:
+        print("There is no common prefix among the input strings")  
+        
 def startEnd(string, substring):
     count = 0
     l = len(string)
@@ -48,6 +72,19 @@ def highestConcat(arr):
             combo = tup
     return list(combo)
 
+def seenSubstring(string):
+    substring = {}
+    l = len(string)
+    for i in range(0, l):
+        for j in range(i+1, l):
+            sub = string[i:j+1] 
+            if sub in substring:
+                substring[sub] += 1
+                print("Substring that has been seen previously in", string, "= ", string[i:j+2])
+                break
+            else:
+                substring[sub] = 1
+            
 def RemoveAlternativeDuplicate(string):
     seen = {}
     given = string.lower()
@@ -106,3 +143,8 @@ print()
 given = "you got beautiful eyes"
 output_string = RemoveAlternativeDuplicate(given)
 print("Removed alternate characters from", given, " = ", output_string)
+print()
+seenSubstring(x)
+print()
+given = ["flower","flow","flight"]  
+Longest_common_prefix(given)
