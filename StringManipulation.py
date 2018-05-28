@@ -12,6 +12,24 @@ def palindrome(x):
         j -= 1
     return True
 
+def PowerSet(given):
+    '''Function prints all subsequences or Power set '''
+    str_list = list(given)
+    combos = []
+    powerset = []
+    for i in range(0, len(str_list)+1):
+        ''' itertools returns an iterable object of tuples '''
+        combos.append(itertools.combinations(str_list, i))
+
+    for iterable in combos:
+        for combinations in iterable:
+            combined = ''.join(str(x) for x in combinations)
+            ''' All Non-empty Subsequences '''
+            if combined != '':
+                powerset.append(int(combined))
+    print("All subsequences of", given)
+    print(powerset)
+    
 def Longest_common_prefix(given):
     prefix = {}
     for string in given:
@@ -102,6 +120,17 @@ def RemoveAlternativeDuplicate(string):
     concat = concat.replace("$", "")
     return concat
 
+def string2Words(given, my_dict):
+    length = len(given)
+    given = given.lower()
+    for i in range(0, length):
+        word1 = given[0:i+1]
+        word2 = given[i+1:length]
+        ''' Print if both the words are in dictionary '''
+        if word1 in iter(my_dict.values()) \
+            and word2 in iter(my_dict.values()):
+                print(word1, word2)
+                
 def combinations(string, size):
     lst = list(string)
     combinations = set(itertools.permutations(lst, size))
@@ -148,3 +177,13 @@ seenSubstring(x)
 print()
 given = ["flower","flow","flight"]  
 Longest_common_prefix(given)
+print()
+my_dict = {1:'flip', 2:'is', 3:'easy', 4:'with', 5:'shop', 6:'shopping', 7:'flipkart',
+           8:'ping', 9:'hop', 10:'hopping', 11:'lip', 12:'art', 13:'sea', 14:'car',
+           15:'cart', 16:'map', 17:'mapping', 18:'app', 19:'a', 20:'man', 21:'an',
+           22:'water', 23:'melon', 24:'am'}
+given = 'WaterMelon'
+string2Words(given, my_dict)
+print()
+given = '1234'
+PowerSet(given)
