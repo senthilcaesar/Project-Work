@@ -13,13 +13,41 @@ class BinaryTree:
         if self.root is None:
             self.root = BinaryNode(value)            
         else:
-            self.root.add(value)          
-        self.update_balance(self.root)
-        node = self.get_node(value, self.root)
-        print("Last added Node = ", node.value)
-        node = self.traverseLeaf(node)
-        if node != None:
-            self.reBalance(node)
+            self.root.add(value)    
+        ''' AVL Balancing tree section '''
+#        self.update_balance(self.root)
+#        node = self.get_node(value, self.root)
+#        print("Last added Node = ", node.value)
+#        node = self.traverseLeaf(node)
+#        if node != None:
+#            self.reBalance(node)
+      
+    def deepestNode(self, node):
+        h = self.get_height(node)
+        #for i in range(1, h+1):
+        self.find_deepest(node, h)
+        self.find_rightmost_deepest(node, h)
+            
+    ''' Finding the deepest node is an unbalanced binary tree '''
+    def find_deepest(self, root, level):
+        if root is None:
+            return
+        if level == 1:
+            print("Deepest node in an unbalanced binary tree: ", root.value)
+        elif level > 1:
+            self.find_deepest(root.left, level-1)
+            self.find_deepest(root.right, level-1)
+    
+    ''' Finding the right most element in the lowest level in an unbalanced binary tree '''
+    def find_rightmost_deepest(self, root, level):
+        if root is None:
+            return
+        if level == 1:
+            if root.value > root.parent.value:
+                print("Right most element in the lowest level in an unbalanced binary tree: ", root.value)
+        elif level > 1:
+            self.find_rightmost_deepest(root.left, level-1)
+            self.find_rightmost_deepest(root.right, level-1)
             
     def traverseLeaf(self, node):      
         if node.balance == -2 or node.balance == 2: 
