@@ -1,0 +1,9 @@
+git config --global user.name "Senthil Caesar"
+git config --global user.email senthilcaesar@yahoo.co.in
+git commit -m "Story 182: Fix benchmarks for speed"
+git push
+git commit -a
+git status
+git clone https://github.com/JamesEdMichaud/phase2.git
+git push https://github.com/JamesEdMichaud/phase2.git
+git rm -r --cached phase2
