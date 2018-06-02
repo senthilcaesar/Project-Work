@@ -1,0 +1,66 @@
+Trying to run under a GPU.  If this is not desired, then modify network3.py
+to set the GPU flag to False.
+
+Pyramid shape =  (1700, 1700)
+Batch Shape =  (43681, 10000)
+Batch length =  43681
+Craters seen in Pyramid 1  =  848
+No of the coordinates in Pyramid 1  =  848
+
+Pyramid shape =  (1134, 1134)
+Batch Shape =  (19321, 10000)
+Batch length =  19321
+Craters seen in Pyramid 2  =  568
+No of the coordinates in Pyramid 2  =  568
+
+Pyramid shape =  (756, 756)
+Batch Shape =  (8281, 10000)
+Batch length =  8281
+Craters seen in Pyramid 3  =  278
+No of the coordinates in Pyramid 3  =  278
+
+Pyramid shape =  (504, 504)
+Batch Shape =  (3600, 10000)
+Batch length =  3600
+Craters seen in Pyramid 4  =  118
+No of the coordinates in Pyramid 4  =  118
+
+Pyramid shape =  (336, 336)
+Batch Shape =  (1521, 10000)
+Batch length =  1521
+Craters seen in Pyramid 5  =  60
+No of the coordinates in Pyramid 5  =  60
+
+Pyramid shape =  (224, 224)
+Batch Shape =  (625, 10000)
+Batch length =  625
+Craters seen in Pyramid 6  =  23
+No of the coordinates in Pyramid 6  =  23
+
+Pyramid shape =  (150, 150)
+Batch Shape =  (256, 10000)
+Batch length =  256
+Craters seen in Pyramid 7  =  12
+No of the coordinates in Pyramid 7  =  12
+
+Pyramid shape =  (100, 100)
+Batch Shape =  (81, 10000)
+Batch length =  81
+Craters seen in Pyramid 8  =  1
+No of the coordinates in Pyramid 8  =  1
+
+Pyramid shape =  (67, 67)
+Batch Shape =  (25, 10000)
+Batch length =  25
+Extra =  24
+New batch length =  49
+Craters seen in Pyramid 9  =  0
+No of the coordinates in Pyramid 9  =  0
+
+Pyramid shape =  (45, 45)
+Batch Shape =  (4, 10000)
+Batch length =  4
+Extra =  45
+New batch length =  49
+Craters seen in Pyramid 10  =  0
+No of the coordinates in Pyramid 10  =  0

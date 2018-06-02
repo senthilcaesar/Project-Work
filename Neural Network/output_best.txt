@@ -1,0 +1,1637 @@
+Trying to run under a GPU.  If this is not desired, then modify network3.py
+to set the GPU flag to False.
+Train data shape       :  (1350, 10000)
+Train labels shape     :  (300,)
+Test data shape        :  (300, 10000)
+Test labels shape      :  (300,)
+Validation data shape  :  (300, 10000)
+Validation labels shape:  (300,)
+
+Number of Train Batch =  9
+Number of validation Batch =  2
+Number of Test Batch =  2
+
+Total Non Craters in Training Data =  900
+Total Craters in Training Data =  450
+Total Non Craters in Test Data =  210
+Total Craters in Test Data =  90
+
+Iteration 0: Cost 0.69: l_r 0.01
+Iteration 1: Cost 0.68: l_r 0.01
+Iteration 2: Cost 0.67: l_r 0.01
+Iteration 3: Cost 0.67: l_r 0.01
+Iteration 4: Cost 0.67: l_r 0.01
+Iteration 5: Cost 0.66: l_r 0.01
+Iteration 6: Cost 0.66: l_r 0.01
+Iteration 7: Cost 0.64: l_r 0.01
+Iteration 8: Cost 0.64: l_r 0.01
+Epoch 0: validation accuracy 65.67%
+This is the best validation accuracy to date.
+
+True Positive  =  0
+True Negative  =  210
+False Negative =  90
+False Positive =  0
+
+The corresponding test accuracy is 70.00%
+Iteration 9: Cost 0.63: l_r 0.01
+Iteration 10: Cost 0.63: l_r 0.01
+Iteration 11: Cost 0.62: l_r 0.01
+Iteration 12: Cost 0.66: l_r 0.01
+Iteration 13: Cost 0.64: l_r 0.01
+Iteration 14: Cost 0.64: l_r 0.01
+Iteration 15: Cost 0.63: l_r 0.01
+Iteration 16: Cost 0.60: l_r 0.01
+Iteration 17: Cost 0.62: l_r 0.01
+Epoch 1: validation accuracy 65.67%
+This is the best validation accuracy to date.
+
+True Positive  =  0
+True Negative  =  210
+False Negative =  90
+False Positive =  0
+
+The corresponding test accuracy is 70.00%
+Iteration 18: Cost 0.61: l_r 0.01
+Iteration 19: Cost 0.60: l_r 0.01
+Iteration 20: Cost 0.59: l_r 0.01
+Iteration 21: Cost 0.64: l_r 0.01
+Iteration 22: Cost 0.63: l_r 0.01
+Iteration 23: Cost 0.62: l_r 0.01
+Iteration 24: Cost 0.61: l_r 0.01
+Iteration 25: Cost 0.58: l_r 0.01
+Iteration 26: Cost 0.60: l_r 0.01
+Epoch 2: validation accuracy 65.67%
+This is the best validation accuracy to date.
+
+True Positive  =  0
+True Negative  =  210
+False Negative =  90
+False Positive =  0
+
+The corresponding test accuracy is 70.00%
+Iteration 27: Cost 0.58: l_r 0.01
+Iteration 28: Cost 0.58: l_r 0.01
+Iteration 29: Cost 0.56: l_r 0.01
+Iteration 30: Cost 0.61: l_r 0.01
+Iteration 31: Cost 0.59: l_r 0.01
+Iteration 32: Cost 0.59: l_r 0.01
+Iteration 33: Cost 0.57: l_r 0.01
+Iteration 34: Cost 0.54: l_r 0.01
+Iteration 35: Cost 0.55: l_r 0.01
+Epoch 3: validation accuracy 66.00%
+This is the best validation accuracy to date.
+
+True Positive  =  1
+True Negative  =  210
+False Negative =  89
+False Positive =  0
+
+The corresponding test accuracy is 70.33%
+Iteration 36: Cost 0.54: l_r 0.01
+Iteration 37: Cost 0.53: l_r 0.01
+Iteration 38: Cost 0.51: l_r 0.01
+Iteration 39: Cost 0.56: l_r 0.01
+Iteration 40: Cost 0.54: l_r 0.01
+Iteration 41: Cost 0.53: l_r 0.01
+Iteration 42: Cost 0.51: l_r 0.01
+Iteration 43: Cost 0.48: l_r 0.01
+Iteration 44: Cost 0.49: l_r 0.01
+Epoch 4: validation accuracy 77.00%
+This is the best validation accuracy to date.
+
+True Positive  =  28
+True Negative  =  210
+False Negative =  62
+False Positive =  0
+
+The corresponding test accuracy is 79.33%
+Iteration 45: Cost 0.47: l_r 0.01
+Iteration 46: Cost 0.46: l_r 0.01
+Iteration 47: Cost 0.44: l_r 0.01
+Iteration 48: Cost 0.48: l_r 0.01
+Iteration 49: Cost 0.45: l_r 0.01
+Iteration 50: Cost 0.45: l_r 0.01
+Iteration 51: Cost 0.41: l_r 0.01
+Iteration 52: Cost 0.39: l_r 0.01
+Iteration 53: Cost 0.40: l_r 0.01
+Epoch 5: validation accuracy 92.67%
+This is the best validation accuracy to date.
+
+True Positive  =  65
+True Negative  =  210
+False Negative =  25
+False Positive =  0
+
+The corresponding test accuracy is 91.67%
+Iteration 54: Cost 0.38: l_r 0.01
+Iteration 55: Cost 0.37: l_r 0.01
+Iteration 56: Cost 0.34: l_r 0.01
+Iteration 57: Cost 0.39: l_r 0.01
+Iteration 58: Cost 0.35: l_r 0.01
+Iteration 59: Cost 0.35: l_r 0.01
+Iteration 60: Cost 0.31: l_r 0.01
+Iteration 61: Cost 0.29: l_r 0.01
+Iteration 62: Cost 0.29: l_r 0.01
+Epoch 6: validation accuracy 95.33%
+This is the best validation accuracy to date.
+
+True Positive  =  73
+True Negative  =  210
+False Negative =  17
+False Positive =  0
+
+The corresponding test accuracy is 94.33%
+Iteration 63: Cost 0.28: l_r 0.01
+Iteration 64: Cost 0.28: l_r 0.01
+Iteration 65: Cost 0.26: l_r 0.01
+Iteration 66: Cost 0.31: l_r 0.01
+Iteration 67: Cost 0.27: l_r 0.01
+Iteration 68: Cost 0.30: l_r 0.01
+Iteration 69: Cost 0.31: l_r 0.01
+Iteration 70: Cost 0.30: l_r 0.01
+Iteration 71: Cost 0.25: l_r 0.01
+Epoch 7: validation accuracy 89.67%
+Iteration 72: Cost 0.25: l_r 0.01
+Iteration 73: Cost 0.24: l_r 0.01
+Iteration 74: Cost 0.22: l_r 0.01
+Iteration 75: Cost 0.23: l_r 0.01
+Iteration 76: Cost 0.20: l_r 0.01
+Iteration 77: Cost 0.22: l_r 0.01
+Iteration 78: Cost 0.19: l_r 0.01
+Iteration 79: Cost 0.20: l_r 0.01
+Iteration 80: Cost 0.27: l_r 0.01
+Epoch 8: validation accuracy 95.33%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  187
+False Negative =  0
+False Positive =  23
+
+The corresponding test accuracy is 92.33%
+Iteration 81: Cost 0.26: l_r 0.01
+Iteration 82: Cost 0.38: l_r 0.01
+Iteration 83: Cost 0.35: l_r 0.01
+Iteration 84: Cost 0.62: l_r 0.01
+Iteration 85: Cost 0.47: l_r 0.01
+Iteration 86: Cost 0.93: l_r 0.01
+Iteration 87: Cost 0.45: l_r 0.01
+Iteration 88: Cost 0.33: l_r 0.01
+Iteration 89: Cost 0.17: l_r 0.01
+Epoch 9: validation accuracy 96.67%
+This is the best validation accuracy to date.
+
+True Positive  =  79
+True Negative  =  210
+False Negative =  11
+False Positive =  0
+
+The corresponding test accuracy is 96.33%
+Iteration 90: Cost 0.15: l_r 0.01
+Iteration 91: Cost 0.17: l_r 0.01
+Iteration 92: Cost 0.15: l_r 0.01
+Iteration 93: Cost 0.19: l_r 0.01
+Iteration 94: Cost 0.15: l_r 0.01
+Iteration 95: Cost 0.16: l_r 0.01
+Iteration 96: Cost 0.13: l_r 0.01
+Iteration 97: Cost 0.12: l_r 0.01
+Iteration 98: Cost 0.14: l_r 0.01
+Epoch 10: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  83
+True Negative  =  208
+False Negative =  7
+False Positive =  2
+
+The corresponding test accuracy is 97.00%
+Iteration 99: Cost 0.12: l_r 0.01
+Iteration 100: Cost 0.14: l_r 0.01
+Iteration 101: Cost 0.13: l_r 0.01
+Iteration 102: Cost 0.16: l_r 0.01
+Iteration 103: Cost 0.12: l_r 0.01
+Iteration 104: Cost 0.13: l_r 0.01
+Iteration 105: Cost 0.11: l_r 0.01
+Iteration 106: Cost 0.09: l_r 0.01
+Iteration 107: Cost 0.12: l_r 0.01
+Epoch 11: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  84
+True Negative  =  208
+False Negative =  6
+False Positive =  2
+
+The corresponding test accuracy is 97.33%
+Iteration 108: Cost 0.09: l_r 0.01
+Iteration 109: Cost 0.12: l_r 0.01
+Iteration 110: Cost 0.11: l_r 0.01
+Iteration 111: Cost 0.14: l_r 0.01
+Iteration 112: Cost 0.10: l_r 0.01
+Iteration 113: Cost 0.12: l_r 0.01
+Iteration 114: Cost 0.09: l_r 0.01
+Iteration 115: Cost 0.08: l_r 0.01
+Iteration 116: Cost 0.11: l_r 0.01
+Epoch 12: validation accuracy 97.33%
+Iteration 117: Cost 0.08: l_r 0.01
+Iteration 118: Cost 0.11: l_r 0.01
+Iteration 119: Cost 0.10: l_r 0.01
+Iteration 120: Cost 0.13: l_r 0.01
+Iteration 121: Cost 0.09: l_r 0.01
+Iteration 122: Cost 0.11: l_r 0.01
+Iteration 123: Cost 0.08: l_r 0.01
+Iteration 124: Cost 0.07: l_r 0.01
+Iteration 125: Cost 0.10: l_r 0.01
+Epoch 13: validation accuracy 97.33%
+Iteration 126: Cost 0.07: l_r 0.01
+Iteration 127: Cost 0.10: l_r 0.01
+Iteration 128: Cost 0.09: l_r 0.01
+Iteration 129: Cost 0.11: l_r 0.01
+Iteration 130: Cost 0.08: l_r 0.01
+Iteration 131: Cost 0.10: l_r 0.01
+Iteration 132: Cost 0.08: l_r 0.01
+Iteration 133: Cost 0.06: l_r 0.01
+Iteration 134: Cost 0.10: l_r 0.01
+Epoch 14: validation accuracy 97.33%
+Iteration 135: Cost 0.06: l_r 0.01
+Iteration 136: Cost 0.09: l_r 0.01
+Iteration 137: Cost 0.08: l_r 0.01
+Iteration 138: Cost 0.11: l_r 0.01
+Iteration 139: Cost 0.07: l_r 0.01
+Iteration 140: Cost 0.10: l_r 0.01
+Iteration 141: Cost 0.07: l_r 0.01
+Iteration 142: Cost 0.06: l_r 0.01
+Iteration 143: Cost 0.10: l_r 0.01
+Epoch 15: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  207
+False Negative =  1
+False Positive =  3
+
+The corresponding test accuracy is 98.67%
+Iteration 144: Cost 0.06: l_r 0.01
+Iteration 145: Cost 0.09: l_r 0.01
+Iteration 146: Cost 0.07: l_r 0.01
+Iteration 147: Cost 0.10: l_r 0.01
+Iteration 148: Cost 0.07: l_r 0.01
+Iteration 149: Cost 0.09: l_r 0.01
+Iteration 150: Cost 0.07: l_r 0.01
+Iteration 151: Cost 0.06: l_r 0.01
+Iteration 152: Cost 0.09: l_r 0.01
+Epoch 16: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  207
+False Negative =  1
+False Positive =  3
+
+The corresponding test accuracy is 98.67%
+Iteration 153: Cost 0.05: l_r 0.01
+Iteration 154: Cost 0.08: l_r 0.01
+Iteration 155: Cost 0.07: l_r 0.01
+Iteration 156: Cost 0.09: l_r 0.01
+Iteration 157: Cost 0.06: l_r 0.01
+Iteration 158: Cost 0.09: l_r 0.01
+Iteration 159: Cost 0.07: l_r 0.01
+Iteration 160: Cost 0.06: l_r 0.01
+Iteration 161: Cost 0.09: l_r 0.01
+Epoch 17: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  207
+False Negative =  1
+False Positive =  3
+
+The corresponding test accuracy is 98.67%
+Iteration 162: Cost 0.05: l_r 0.01
+Iteration 163: Cost 0.08: l_r 0.01
+Iteration 164: Cost 0.06: l_r 0.01
+Iteration 165: Cost 0.09: l_r 0.01
+Iteration 166: Cost 0.06: l_r 0.01
+Iteration 167: Cost 0.09: l_r 0.01
+Iteration 168: Cost 0.07: l_r 0.01
+Iteration 169: Cost 0.06: l_r 0.01
+Iteration 170: Cost 0.09: l_r 0.01
+Epoch 18: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  206
+False Negative =  0
+False Positive =  4
+
+The corresponding test accuracy is 98.67%
+Iteration 171: Cost 0.05: l_r 0.01
+Iteration 172: Cost 0.08: l_r 0.01
+Iteration 173: Cost 0.06: l_r 0.01
+Iteration 174: Cost 0.09: l_r 0.01
+Iteration 175: Cost 0.06: l_r 0.01
+Iteration 176: Cost 0.09: l_r 0.01
+Iteration 177: Cost 0.06: l_r 0.01
+Iteration 178: Cost 0.06: l_r 0.01
+Iteration 179: Cost 0.09: l_r 0.01
+Epoch 19: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  206
+False Negative =  0
+False Positive =  4
+
+The corresponding test accuracy is 98.67%
+Iteration 180: Cost 0.05: l_r 0.01
+Iteration 181: Cost 0.07: l_r 0.01
+Iteration 182: Cost 0.06: l_r 0.01
+Iteration 183: Cost 0.08: l_r 0.01
+Iteration 184: Cost 0.06: l_r 0.01
+Iteration 185: Cost 0.09: l_r 0.01
+Iteration 186: Cost 0.06: l_r 0.01
+Iteration 187: Cost 0.06: l_r 0.01
+Iteration 188: Cost 0.09: l_r 0.01
+Epoch 20: validation accuracy 97.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  206
+False Negative =  0
+False Positive =  4
+
+The corresponding test accuracy is 98.67%
+Iteration 189: Cost 0.05: l_r 0.01
+Iteration 190: Cost 0.07: l_r 0.01
+Iteration 191: Cost 0.05: l_r 0.01
+Iteration 192: Cost 0.08: l_r 0.01
+Iteration 193: Cost 0.06: l_r 0.01
+Iteration 194: Cost 0.09: l_r 0.01
+Iteration 195: Cost 0.07: l_r 0.01
+Iteration 196: Cost 0.06: l_r 0.01
+Iteration 197: Cost 0.09: l_r 0.01
+Epoch 21: validation accuracy 97.33%
+Iteration 198: Cost 0.05: l_r 0.01
+Iteration 199: Cost 0.07: l_r 0.01
+Iteration 200: Cost 0.05: l_r 0.01
+Iteration 201: Cost 0.08: l_r 0.01
+Iteration 202: Cost 0.05: l_r 0.01
+Iteration 203: Cost 0.08: l_r 0.01
+Iteration 204: Cost 0.05: l_r 0.01
+Iteration 205: Cost 0.04: l_r 0.01
+Iteration 206: Cost 0.07: l_r 0.01
+Epoch 22: validation accuracy 98.33%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  207
+False Negative =  1
+False Positive =  3
+
+The corresponding test accuracy is 98.67%
+Iteration 207: Cost 0.03: l_r 0.01
+Iteration 208: Cost 0.08: l_r 0.01
+Iteration 209: Cost 0.06: l_r 0.01
+Iteration 210: Cost 0.09: l_r 0.01
+Iteration 211: Cost 0.10: l_r 0.01
+Iteration 212: Cost 0.13: l_r 0.01
+Iteration 213: Cost 0.17: l_r 0.01
+Iteration 214: Cost 0.23: l_r 0.01
+Iteration 215: Cost 0.62: l_r 0.01
+Epoch 23: validation accuracy 58.00%
+Iteration 216: Cost 1.22: l_r 0.01
+Iteration 217: Cost 5.69: l_r 0.01
+Iteration 218: Cost 0.42: l_r 0.01
+Iteration 219: Cost 0.37: l_r 0.01
+Iteration 220: Cost 0.30: l_r 0.01
+Iteration 221: Cost 0.28: l_r 0.01
+Iteration 222: Cost 0.23: l_r 0.01
+Iteration 223: Cost 0.18: l_r 0.01
+Iteration 224: Cost 0.18: l_r 0.01
+Epoch 24: validation accuracy 97.33%
+Iteration 225: Cost 0.16: l_r 0.01
+Iteration 226: Cost 0.15: l_r 0.01
+Iteration 227: Cost 0.12: l_r 0.01
+Iteration 228: Cost 0.15: l_r 0.01
+Iteration 229: Cost 0.12: l_r 0.01
+Iteration 230: Cost 0.12: l_r 0.01
+Iteration 231: Cost 0.10: l_r 0.01
+Iteration 232: Cost 0.09: l_r 0.01
+Iteration 233: Cost 0.10: l_r 0.01
+Epoch 25: validation accuracy 98.67%
+This is the best validation accuracy to date.
+
+True Positive  =  85
+True Negative  =  209
+False Negative =  5
+False Positive =  1
+
+The corresponding test accuracy is 98.00%
+Iteration 234: Cost 0.08: l_r 0.01
+Iteration 235: Cost 0.10: l_r 0.01
+Iteration 236: Cost 0.09: l_r 0.01
+Iteration 237: Cost 0.11: l_r 0.01
+Iteration 238: Cost 0.08: l_r 0.01
+Iteration 239: Cost 0.10: l_r 0.01
+Iteration 240: Cost 0.08: l_r 0.01
+Iteration 241: Cost 0.06: l_r 0.01
+Iteration 242: Cost 0.08: l_r 0.01
+Epoch 26: validation accuracy 98.67%
+This is the best validation accuracy to date.
+
+True Positive  =  85
+True Negative  =  209
+False Negative =  5
+False Positive =  1
+
+The corresponding test accuracy is 98.00%
+Iteration 243: Cost 0.06: l_r 0.01
+Iteration 244: Cost 0.09: l_r 0.01
+Iteration 245: Cost 0.07: l_r 0.01
+Iteration 246: Cost 0.10: l_r 0.01
+Iteration 247: Cost 0.07: l_r 0.01
+Iteration 248: Cost 0.08: l_r 0.01
+Iteration 249: Cost 0.07: l_r 0.01
+Iteration 250: Cost 0.05: l_r 0.01
+Iteration 251: Cost 0.07: l_r 0.01
+Epoch 27: validation accuracy 98.33%
+Iteration 252: Cost 0.05: l_r 0.01
+Iteration 253: Cost 0.08: l_r 0.01
+Iteration 254: Cost 0.06: l_r 0.01
+Iteration 255: Cost 0.09: l_r 0.01
+Iteration 256: Cost 0.06: l_r 0.01
+Iteration 257: Cost 0.07: l_r 0.01
+Iteration 258: Cost 0.06: l_r 0.01
+Iteration 259: Cost 0.04: l_r 0.01
+Iteration 260: Cost 0.06: l_r 0.01
+Epoch 28: validation accuracy 98.33%
+Iteration 261: Cost 0.04: l_r 0.01
+Iteration 262: Cost 0.08: l_r 0.01
+Iteration 263: Cost 0.06: l_r 0.01
+Iteration 264: Cost 0.08: l_r 0.01
+Iteration 265: Cost 0.06: l_r 0.01
+Iteration 266: Cost 0.07: l_r 0.01
+Iteration 267: Cost 0.06: l_r 0.01
+Iteration 268: Cost 0.04: l_r 0.01
+Iteration 269: Cost 0.06: l_r 0.01
+Epoch 29: validation accuracy 98.33%
+Iteration 270: Cost 0.03: l_r 0.01
+Iteration 271: Cost 0.08: l_r 0.01
+Iteration 272: Cost 0.06: l_r 0.01
+Iteration 273: Cost 0.08: l_r 0.01
+Iteration 274: Cost 0.05: l_r 0.01
+Iteration 275: Cost 0.07: l_r 0.01
+Iteration 276: Cost 0.05: l_r 0.01
+Iteration 277: Cost 0.04: l_r 0.01
+Iteration 278: Cost 0.05: l_r 0.01
+Epoch 30: validation accuracy 98.67%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 279: Cost 0.03: l_r 0.01
+Iteration 280: Cost 0.08: l_r 0.01
+Iteration 281: Cost 0.05: l_r 0.01
+Iteration 282: Cost 0.08: l_r 0.01
+Iteration 283: Cost 0.05: l_r 0.01
+Iteration 284: Cost 0.06: l_r 0.01
+Iteration 285: Cost 0.05: l_r 0.01
+Iteration 286: Cost 0.03: l_r 0.01
+Iteration 287: Cost 0.05: l_r 0.01
+Epoch 31: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 288: Cost 0.03: l_r 0.01
+Iteration 289: Cost 0.08: l_r 0.01
+Iteration 290: Cost 0.05: l_r 0.01
+Iteration 291: Cost 0.07: l_r 0.01
+Iteration 292: Cost 0.05: l_r 0.01
+Iteration 293: Cost 0.06: l_r 0.01
+Iteration 294: Cost 0.05: l_r 0.01
+Iteration 295: Cost 0.03: l_r 0.01
+Iteration 296: Cost 0.05: l_r 0.01
+Epoch 32: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 297: Cost 0.02: l_r 0.01
+Iteration 298: Cost 0.08: l_r 0.01
+Iteration 299: Cost 0.05: l_r 0.01
+Iteration 300: Cost 0.07: l_r 0.01
+Iteration 301: Cost 0.05: l_r 0.01
+Iteration 302: Cost 0.06: l_r 0.01
+Iteration 303: Cost 0.04: l_r 0.01
+Iteration 304: Cost 0.03: l_r 0.01
+Iteration 305: Cost 0.04: l_r 0.01
+Epoch 33: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 306: Cost 0.02: l_r 0.01
+Iteration 307: Cost 0.07: l_r 0.01
+Iteration 308: Cost 0.05: l_r 0.01
+Iteration 309: Cost 0.07: l_r 0.01
+Iteration 310: Cost 0.04: l_r 0.01
+Iteration 311: Cost 0.06: l_r 0.01
+Iteration 312: Cost 0.04: l_r 0.01
+Iteration 313: Cost 0.03: l_r 0.01
+Iteration 314: Cost 0.04: l_r 0.01
+Epoch 34: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 315: Cost 0.02: l_r 0.01
+Iteration 316: Cost 0.07: l_r 0.01
+Iteration 317: Cost 0.04: l_r 0.01
+Iteration 318: Cost 0.06: l_r 0.01
+Iteration 319: Cost 0.04: l_r 0.01
+Iteration 320: Cost 0.05: l_r 0.01
+Iteration 321: Cost 0.04: l_r 0.01
+Iteration 322: Cost 0.03: l_r 0.01
+Iteration 323: Cost 0.04: l_r 0.01
+Epoch 35: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 324: Cost 0.02: l_r 0.01
+Iteration 325: Cost 0.07: l_r 0.01
+Iteration 326: Cost 0.04: l_r 0.01
+Iteration 327: Cost 0.06: l_r 0.01
+Iteration 328: Cost 0.04: l_r 0.01
+Iteration 329: Cost 0.05: l_r 0.01
+Iteration 330: Cost 0.04: l_r 0.01
+Iteration 331: Cost 0.03: l_r 0.01
+Iteration 332: Cost 0.04: l_r 0.01
+Epoch 36: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 333: Cost 0.02: l_r 0.01
+Iteration 334: Cost 0.07: l_r 0.01
+Iteration 335: Cost 0.04: l_r 0.01
+Iteration 336: Cost 0.06: l_r 0.01
+Iteration 337: Cost 0.04: l_r 0.01
+Iteration 338: Cost 0.05: l_r 0.01
+Iteration 339: Cost 0.04: l_r 0.01
+Iteration 340: Cost 0.03: l_r 0.01
+Iteration 341: Cost 0.04: l_r 0.01
+Epoch 37: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  86
+True Negative  =  208
+False Negative =  4
+False Positive =  2
+
+The corresponding test accuracy is 98.00%
+Iteration 342: Cost 0.01: l_r 0.01
+Iteration 343: Cost 0.07: l_r 0.01
+Iteration 344: Cost 0.04: l_r 0.01
+Iteration 345: Cost 0.06: l_r 0.01
+Iteration 346: Cost 0.04: l_r 0.01
+Iteration 347: Cost 0.05: l_r 0.01
+Iteration 348: Cost 0.03: l_r 0.01
+Iteration 349: Cost 0.02: l_r 0.01
+Iteration 350: Cost 0.03: l_r 0.01
+Epoch 38: validation accuracy 98.67%
+Iteration 351: Cost 0.01: l_r 0.01
+Iteration 352: Cost 0.07: l_r 0.01
+Iteration 353: Cost 0.04: l_r 0.01
+Iteration 354: Cost 0.06: l_r 0.01
+Iteration 355: Cost 0.04: l_r 0.01
+Iteration 356: Cost 0.05: l_r 0.01
+Iteration 357: Cost 0.03: l_r 0.01
+Iteration 358: Cost 0.02: l_r 0.01
+Iteration 359: Cost 0.03: l_r 0.01
+Epoch 39: validation accuracy 98.67%
+Iteration 360: Cost 0.01: l_r 0.01
+Iteration 361: Cost 0.06: l_r 0.01
+Iteration 362: Cost 0.04: l_r 0.01
+Iteration 363: Cost 0.06: l_r 0.01
+Iteration 364: Cost 0.04: l_r 0.01
+Iteration 365: Cost 0.05: l_r 0.01
+Iteration 366: Cost 0.03: l_r 0.01
+Iteration 367: Cost 0.02: l_r 0.01
+Iteration 368: Cost 0.03: l_r 0.01
+Epoch 40: validation accuracy 98.67%
+Iteration 369: Cost 0.01: l_r 0.01
+Iteration 370: Cost 0.06: l_r 0.01
+Iteration 371: Cost 0.03: l_r 0.01
+Iteration 372: Cost 0.05: l_r 0.01
+Iteration 373: Cost 0.04: l_r 0.01
+Iteration 374: Cost 0.04: l_r 0.01
+Iteration 375: Cost 0.03: l_r 0.01
+Iteration 376: Cost 0.02: l_r 0.01
+Iteration 377: Cost 0.03: l_r 0.01
+Epoch 41: validation accuracy 98.67%
+Iteration 378: Cost 0.01: l_r 0.01
+Iteration 379: Cost 0.06: l_r 0.01
+Iteration 380: Cost 0.03: l_r 0.01
+Iteration 381: Cost 0.05: l_r 0.01
+Iteration 382: Cost 0.03: l_r 0.01
+Iteration 383: Cost 0.04: l_r 0.01
+Iteration 384: Cost 0.03: l_r 0.01
+Iteration 385: Cost 0.02: l_r 0.01
+Iteration 386: Cost 0.03: l_r 0.01
+Epoch 42: validation accuracy 98.67%
+Iteration 387: Cost 0.01: l_r 0.01
+Iteration 388: Cost 0.06: l_r 0.01
+Iteration 389: Cost 0.03: l_r 0.01
+Iteration 390: Cost 0.05: l_r 0.01
+Iteration 391: Cost 0.03: l_r 0.01
+Iteration 392: Cost 0.04: l_r 0.01
+Iteration 393: Cost 0.03: l_r 0.01
+Iteration 394: Cost 0.02: l_r 0.01
+Iteration 395: Cost 0.03: l_r 0.01
+Epoch 43: validation accuracy 98.67%
+Iteration 396: Cost 0.01: l_r 0.01
+Iteration 397: Cost 0.06: l_r 0.01
+Iteration 398: Cost 0.03: l_r 0.01
+Iteration 399: Cost 0.05: l_r 0.01
+Iteration 400: Cost 0.03: l_r 0.01
+Iteration 401: Cost 0.04: l_r 0.01
+Iteration 402: Cost 0.03: l_r 0.01
+Iteration 403: Cost 0.02: l_r 0.01
+Iteration 404: Cost 0.03: l_r 0.01
+Epoch 44: validation accuracy 98.67%
+Iteration 405: Cost 0.01: l_r 0.01
+Iteration 406: Cost 0.06: l_r 0.01
+Iteration 407: Cost 0.03: l_r 0.01
+Iteration 408: Cost 0.05: l_r 0.01
+Iteration 409: Cost 0.03: l_r 0.01
+Iteration 410: Cost 0.04: l_r 0.01
+Iteration 411: Cost 0.03: l_r 0.01
+Iteration 412: Cost 0.02: l_r 0.01
+Iteration 413: Cost 0.03: l_r 0.01
+Epoch 45: validation accuracy 98.67%
+Iteration 414: Cost 0.01: l_r 0.01
+Iteration 415: Cost 0.06: l_r 0.01
+Iteration 416: Cost 0.03: l_r 0.01
+Iteration 417: Cost 0.05: l_r 0.01
+Iteration 418: Cost 0.03: l_r 0.01
+Iteration 419: Cost 0.04: l_r 0.01
+Iteration 420: Cost 0.02: l_r 0.01
+Iteration 421: Cost 0.02: l_r 0.01
+Iteration 422: Cost 0.02: l_r 0.01
+Epoch 46: validation accuracy 98.67%
+Iteration 423: Cost 0.01: l_r 0.01
+Iteration 424: Cost 0.06: l_r 0.01
+Iteration 425: Cost 0.03: l_r 0.01
+Iteration 426: Cost 0.05: l_r 0.01
+Iteration 427: Cost 0.03: l_r 0.01
+Iteration 428: Cost 0.04: l_r 0.01
+Iteration 429: Cost 0.02: l_r 0.01
+Iteration 430: Cost 0.02: l_r 0.01
+Iteration 431: Cost 0.02: l_r 0.01
+Epoch 47: validation accuracy 98.67%
+Iteration 432: Cost 0.01: l_r 0.01
+Iteration 433: Cost 0.05: l_r 0.01
+Iteration 434: Cost 0.03: l_r 0.01
+Iteration 435: Cost 0.05: l_r 0.01
+Iteration 436: Cost 0.03: l_r 0.01
+Iteration 437: Cost 0.04: l_r 0.01
+Iteration 438: Cost 0.02: l_r 0.01
+Iteration 439: Cost 0.02: l_r 0.01
+Iteration 440: Cost 0.02: l_r 0.01
+Epoch 48: validation accuracy 98.67%
+Iteration 441: Cost 0.01: l_r 0.01
+Iteration 442: Cost 0.05: l_r 0.01
+Iteration 443: Cost 0.03: l_r 0.01
+Iteration 444: Cost 0.04: l_r 0.01
+Iteration 445: Cost 0.03: l_r 0.01
+Iteration 446: Cost 0.04: l_r 0.01
+Iteration 447: Cost 0.02: l_r 0.01
+Iteration 448: Cost 0.02: l_r 0.01
+Iteration 449: Cost 0.02: l_r 0.01
+Epoch 49: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  87
+True Negative  =  208
+False Negative =  3
+False Positive =  2
+
+The corresponding test accuracy is 98.33%
+Iteration 450: Cost 0.00: l_r 0.01
+Iteration 451: Cost 0.05: l_r 0.01
+Iteration 452: Cost 0.02: l_r 0.01
+Iteration 453: Cost 0.04: l_r 0.01
+Iteration 454: Cost 0.03: l_r 0.01
+Iteration 455: Cost 0.03: l_r 0.01
+Iteration 456: Cost 0.02: l_r 0.01
+Iteration 457: Cost 0.02: l_r 0.01
+Iteration 458: Cost 0.02: l_r 0.01
+Epoch 50: validation accuracy 98.67%
+Iteration 459: Cost 0.00: l_r 0.01
+Iteration 460: Cost 0.05: l_r 0.01
+Iteration 461: Cost 0.02: l_r 0.01
+Iteration 462: Cost 0.04: l_r 0.01
+Iteration 463: Cost 0.02: l_r 0.01
+Iteration 464: Cost 0.03: l_r 0.01
+Iteration 465: Cost 0.02: l_r 0.01
+Iteration 466: Cost 0.02: l_r 0.01
+Iteration 467: Cost 0.02: l_r 0.01
+Epoch 51: validation accuracy 98.67%
+Iteration 468: Cost 0.00: l_r 0.01
+Iteration 469: Cost 0.05: l_r 0.01
+Iteration 470: Cost 0.02: l_r 0.01
+Iteration 471: Cost 0.04: l_r 0.01
+Iteration 472: Cost 0.02: l_r 0.01
+Iteration 473: Cost 0.03: l_r 0.01
+Iteration 474: Cost 0.02: l_r 0.01
+Iteration 475: Cost 0.02: l_r 0.01
+Iteration 476: Cost 0.02: l_r 0.01
+Epoch 52: validation accuracy 99.00%
+This is the best validation accuracy to date.
+
+True Positive  =  87
+True Negative  =  208
+False Negative =  3
+False Positive =  2
+
+The corresponding test accuracy is 98.33%
+Iteration 477: Cost 0.00: l_r 0.01
+Iteration 478: Cost 0.05: l_r 0.01
+Iteration 479: Cost 0.02: l_r 0.01
+Iteration 480: Cost 0.04: l_r 0.01
+Iteration 481: Cost 0.02: l_r 0.01
+Iteration 482: Cost 0.03: l_r 0.01
+Iteration 483: Cost 0.02: l_r 0.01
+Iteration 484: Cost 0.02: l_r 0.01
+Iteration 485: Cost 0.02: l_r 0.01
+Epoch 53: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  208
+False Negative =  2
+False Positive =  2
+
+The corresponding test accuracy is 98.67%
+Iteration 486: Cost 0.00: l_r 0.01
+Iteration 487: Cost 0.05: l_r 0.01
+Iteration 488: Cost 0.02: l_r 0.01
+Iteration 489: Cost 0.04: l_r 0.01
+Iteration 490: Cost 0.02: l_r 0.01
+Iteration 491: Cost 0.03: l_r 0.01
+Iteration 492: Cost 0.02: l_r 0.01
+Iteration 493: Cost 0.02: l_r 0.01
+Iteration 494: Cost 0.02: l_r 0.01
+Epoch 54: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  208
+False Negative =  2
+False Positive =  2
+
+The corresponding test accuracy is 98.67%
+Iteration 495: Cost 0.00: l_r 0.01
+Iteration 496: Cost 0.05: l_r 0.01
+Iteration 497: Cost 0.02: l_r 0.01
+Iteration 498: Cost 0.04: l_r 0.01
+Iteration 499: Cost 0.02: l_r 0.01
+Iteration 500: Cost 0.03: l_r 0.01
+Iteration 501: Cost 0.02: l_r 0.01
+Iteration 502: Cost 0.01: l_r 0.01
+Iteration 503: Cost 0.02: l_r 0.01
+Epoch 55: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  208
+False Negative =  2
+False Positive =  2
+
+The corresponding test accuracy is 98.67%
+Iteration 504: Cost 0.00: l_r 0.01
+Iteration 505: Cost 0.05: l_r 0.01
+Iteration 506: Cost 0.02: l_r 0.01
+Iteration 507: Cost 0.04: l_r 0.01
+Iteration 508: Cost 0.02: l_r 0.01
+Iteration 509: Cost 0.03: l_r 0.01
+Iteration 510: Cost 0.02: l_r 0.01
+Iteration 511: Cost 0.01: l_r 0.01
+Iteration 512: Cost 0.02: l_r 0.01
+Epoch 56: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  209
+False Negative =  2
+False Positive =  1
+
+The corresponding test accuracy is 99.00%
+Iteration 513: Cost 0.00: l_r 0.01
+Iteration 514: Cost 0.05: l_r 0.01
+Iteration 515: Cost 0.02: l_r 0.01
+Iteration 516: Cost 0.04: l_r 0.01
+Iteration 517: Cost 0.02: l_r 0.01
+Iteration 518: Cost 0.03: l_r 0.01
+Iteration 519: Cost 0.02: l_r 0.01
+Iteration 520: Cost 0.01: l_r 0.01
+Iteration 521: Cost 0.02: l_r 0.01
+Epoch 57: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  209
+False Negative =  2
+False Positive =  1
+
+The corresponding test accuracy is 99.00%
+Iteration 522: Cost 0.00: l_r 0.01
+Iteration 523: Cost 0.04: l_r 0.01
+Iteration 524: Cost 0.02: l_r 0.01
+Iteration 525: Cost 0.04: l_r 0.01
+Iteration 526: Cost 0.02: l_r 0.01
+Iteration 527: Cost 0.03: l_r 0.01
+Iteration 528: Cost 0.01: l_r 0.01
+Iteration 529: Cost 0.01: l_r 0.01
+Iteration 530: Cost 0.02: l_r 0.01
+Epoch 58: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  209
+False Negative =  2
+False Positive =  1
+
+The corresponding test accuracy is 99.00%
+Iteration 531: Cost 0.00: l_r 0.01
+Iteration 532: Cost 0.04: l_r 0.01
+Iteration 533: Cost 0.02: l_r 0.01
+Iteration 534: Cost 0.04: l_r 0.01
+Iteration 535: Cost 0.02: l_r 0.01
+Iteration 536: Cost 0.03: l_r 0.01
+Iteration 537: Cost 0.01: l_r 0.01
+Iteration 538: Cost 0.01: l_r 0.01
+Iteration 539: Cost 0.02: l_r 0.01
+Epoch 59: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  209
+False Negative =  2
+False Positive =  1
+
+The corresponding test accuracy is 99.00%
+Iteration 540: Cost 0.00: l_r 0.01
+Iteration 541: Cost 0.04: l_r 0.01
+Iteration 542: Cost 0.02: l_r 0.01
+Iteration 543: Cost 0.03: l_r 0.01
+Iteration 544: Cost 0.02: l_r 0.01
+Iteration 545: Cost 0.03: l_r 0.01
+Iteration 546: Cost 0.01: l_r 0.01
+Iteration 547: Cost 0.01: l_r 0.01
+Iteration 548: Cost 0.01: l_r 0.01
+Epoch 60: validation accuracy 99.33%
+This is the best validation accuracy to date.
+
+True Positive  =  88
+True Negative  =  209
+False Negative =  2
+False Positive =  1
+
+The corresponding test accuracy is 99.00%
+Iteration 549: Cost 0.00: l_r 0.01
+Iteration 550: Cost 0.04: l_r 0.01
+Iteration 551: Cost 0.02: l_r 0.01
+Iteration 552: Cost 0.03: l_r 0.01
+Iteration 553: Cost 0.02: l_r 0.01
+Iteration 554: Cost 0.03: l_r 0.01
+Iteration 555: Cost 0.01: l_r 0.01
+Iteration 556: Cost 0.01: l_r 0.01
+Iteration 557: Cost 0.01: l_r 0.01
+Epoch 61: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 558: Cost 0.00: l_r 0.01
+Iteration 559: Cost 0.04: l_r 0.01
+Iteration 560: Cost 0.02: l_r 0.01
+Iteration 561: Cost 0.03: l_r 0.01
+Iteration 562: Cost 0.02: l_r 0.01
+Iteration 563: Cost 0.02: l_r 0.01
+Iteration 564: Cost 0.01: l_r 0.01
+Iteration 565: Cost 0.01: l_r 0.01
+Iteration 566: Cost 0.01: l_r 0.01
+Epoch 62: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 567: Cost 0.00: l_r 0.01
+Iteration 568: Cost 0.04: l_r 0.01
+Iteration 569: Cost 0.02: l_r 0.01
+Iteration 570: Cost 0.03: l_r 0.01
+Iteration 571: Cost 0.02: l_r 0.01
+Iteration 572: Cost 0.02: l_r 0.01
+Iteration 573: Cost 0.01: l_r 0.01
+Iteration 574: Cost 0.01: l_r 0.01
+Iteration 575: Cost 0.01: l_r 0.01
+Epoch 63: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 576: Cost 0.00: l_r 0.01
+Iteration 577: Cost 0.04: l_r 0.01
+Iteration 578: Cost 0.02: l_r 0.01
+Iteration 579: Cost 0.03: l_r 0.01
+Iteration 580: Cost 0.02: l_r 0.01
+Iteration 581: Cost 0.02: l_r 0.01
+Iteration 582: Cost 0.01: l_r 0.01
+Iteration 583: Cost 0.01: l_r 0.01
+Iteration 584: Cost 0.01: l_r 0.01
+Epoch 64: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 585: Cost 0.00: l_r 0.01
+Iteration 586: Cost 0.04: l_r 0.01
+Iteration 587: Cost 0.02: l_r 0.01
+Iteration 588: Cost 0.03: l_r 0.01
+Iteration 589: Cost 0.01: l_r 0.01
+Iteration 590: Cost 0.02: l_r 0.01
+Iteration 591: Cost 0.01: l_r 0.01
+Iteration 592: Cost 0.01: l_r 0.01
+Iteration 593: Cost 0.01: l_r 0.01
+Epoch 65: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 594: Cost 0.00: l_r 0.01
+Iteration 595: Cost 0.04: l_r 0.01
+Iteration 596: Cost 0.02: l_r 0.01
+Iteration 597: Cost 0.03: l_r 0.01
+Iteration 598: Cost 0.01: l_r 0.01
+Iteration 599: Cost 0.02: l_r 0.01
+Iteration 600: Cost 0.01: l_r 0.01
+Iteration 601: Cost 0.01: l_r 0.01
+Iteration 602: Cost 0.01: l_r 0.01
+Epoch 66: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 603: Cost 0.00: l_r 0.01
+Iteration 604: Cost 0.04: l_r 0.01
+Iteration 605: Cost 0.01: l_r 0.01
+Iteration 606: Cost 0.03: l_r 0.01
+Iteration 607: Cost 0.01: l_r 0.01
+Iteration 608: Cost 0.02: l_r 0.01
+Iteration 609: Cost 0.01: l_r 0.01
+Iteration 610: Cost 0.01: l_r 0.01
+Iteration 611: Cost 0.01: l_r 0.01
+Epoch 67: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 612: Cost 0.00: l_r 0.01
+Iteration 613: Cost 0.04: l_r 0.01
+Iteration 614: Cost 0.01: l_r 0.01
+Iteration 615: Cost 0.03: l_r 0.01
+Iteration 616: Cost 0.01: l_r 0.01
+Iteration 617: Cost 0.02: l_r 0.01
+Iteration 618: Cost 0.01: l_r 0.01
+Iteration 619: Cost 0.01: l_r 0.01
+Iteration 620: Cost 0.01: l_r 0.01
+Epoch 68: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 621: Cost 0.00: l_r 0.01
+Iteration 622: Cost 0.04: l_r 0.01
+Iteration 623: Cost 0.01: l_r 0.01
+Iteration 624: Cost 0.03: l_r 0.01
+Iteration 625: Cost 0.01: l_r 0.01
+Iteration 626: Cost 0.02: l_r 0.01
+Iteration 627: Cost 0.01: l_r 0.01
+Iteration 628: Cost 0.01: l_r 0.01
+Iteration 629: Cost 0.01: l_r 0.01
+Epoch 69: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 630: Cost 0.00: l_r 0.01
+Iteration 631: Cost 0.04: l_r 0.01
+Iteration 632: Cost 0.01: l_r 0.01
+Iteration 633: Cost 0.03: l_r 0.01
+Iteration 634: Cost 0.01: l_r 0.01
+Iteration 635: Cost 0.02: l_r 0.01
+Iteration 636: Cost 0.01: l_r 0.01
+Iteration 637: Cost 0.01: l_r 0.01
+Iteration 638: Cost 0.01: l_r 0.01
+Epoch 70: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 639: Cost 0.00: l_r 0.01
+Iteration 640: Cost 0.04: l_r 0.01
+Iteration 641: Cost 0.01: l_r 0.01
+Iteration 642: Cost 0.03: l_r 0.01
+Iteration 643: Cost 0.01: l_r 0.01
+Iteration 644: Cost 0.02: l_r 0.01
+Iteration 645: Cost 0.01: l_r 0.01
+Iteration 646: Cost 0.01: l_r 0.01
+Iteration 647: Cost 0.01: l_r 0.01
+Epoch 71: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  89
+True Negative  =  209
+False Negative =  1
+False Positive =  1
+
+The corresponding test accuracy is 99.33%
+Iteration 648: Cost 0.00: l_r 0.01
+Iteration 649: Cost 0.03: l_r 0.01
+Iteration 650: Cost 0.01: l_r 0.01
+Iteration 651: Cost 0.03: l_r 0.01
+Iteration 652: Cost 0.01: l_r 0.01
+Iteration 653: Cost 0.02: l_r 0.01
+Iteration 654: Cost 0.01: l_r 0.01
+Iteration 655: Cost 0.01: l_r 0.01
+Iteration 656: Cost 0.01: l_r 0.01
+Epoch 72: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 657: Cost 0.00: l_r 0.01
+Iteration 658: Cost 0.03: l_r 0.01
+Iteration 659: Cost 0.01: l_r 0.01
+Iteration 660: Cost 0.03: l_r 0.01
+Iteration 661: Cost 0.01: l_r 0.01
+Iteration 662: Cost 0.02: l_r 0.01
+Iteration 663: Cost 0.01: l_r 0.01
+Iteration 664: Cost 0.01: l_r 0.01
+Iteration 665: Cost 0.01: l_r 0.01
+Epoch 73: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 666: Cost 0.00: l_r 0.01
+Iteration 667: Cost 0.03: l_r 0.01
+Iteration 668: Cost 0.01: l_r 0.01
+Iteration 669: Cost 0.03: l_r 0.01
+Iteration 670: Cost 0.01: l_r 0.01
+Iteration 671: Cost 0.02: l_r 0.01
+Iteration 672: Cost 0.01: l_r 0.01
+Iteration 673: Cost 0.01: l_r 0.01
+Iteration 674: Cost 0.01: l_r 0.01
+Epoch 74: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 675: Cost 0.00: l_r 0.01
+Iteration 676: Cost 0.03: l_r 0.01
+Iteration 677: Cost 0.01: l_r 0.01
+Iteration 678: Cost 0.03: l_r 0.01
+Iteration 679: Cost 0.01: l_r 0.01
+Iteration 680: Cost 0.02: l_r 0.01
+Iteration 681: Cost 0.01: l_r 0.01
+Iteration 682: Cost 0.01: l_r 0.01
+Iteration 683: Cost 0.01: l_r 0.01
+Epoch 75: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 684: Cost 0.00: l_r 0.01
+Iteration 685: Cost 0.03: l_r 0.01
+Iteration 686: Cost 0.01: l_r 0.01
+Iteration 687: Cost 0.02: l_r 0.01
+Iteration 688: Cost 0.01: l_r 0.01
+Iteration 689: Cost 0.02: l_r 0.01
+Iteration 690: Cost 0.01: l_r 0.01
+Iteration 691: Cost 0.01: l_r 0.01
+Iteration 692: Cost 0.01: l_r 0.01
+Epoch 76: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 693: Cost 0.00: l_r 0.01
+Iteration 694: Cost 0.03: l_r 0.01
+Iteration 695: Cost 0.01: l_r 0.01
+Iteration 696: Cost 0.02: l_r 0.01
+Iteration 697: Cost 0.01: l_r 0.01
+Iteration 698: Cost 0.02: l_r 0.01
+Iteration 699: Cost 0.01: l_r 0.01
+Iteration 700: Cost 0.01: l_r 0.01
+Iteration 701: Cost 0.01: l_r 0.01
+Epoch 77: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 702: Cost 0.00: l_r 0.01
+Iteration 703: Cost 0.03: l_r 0.01
+Iteration 704: Cost 0.01: l_r 0.01
+Iteration 705: Cost 0.02: l_r 0.01
+Iteration 706: Cost 0.01: l_r 0.01
+Iteration 707: Cost 0.02: l_r 0.01
+Iteration 708: Cost 0.01: l_r 0.01
+Iteration 709: Cost 0.01: l_r 0.01
+Iteration 710: Cost 0.01: l_r 0.01
+Epoch 78: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 711: Cost 0.00: l_r 0.01
+Iteration 712: Cost 0.03: l_r 0.01
+Iteration 713: Cost 0.01: l_r 0.01
+Iteration 714: Cost 0.02: l_r 0.01
+Iteration 715: Cost 0.01: l_r 0.01
+Iteration 716: Cost 0.02: l_r 0.01
+Iteration 717: Cost 0.01: l_r 0.01
+Iteration 718: Cost 0.01: l_r 0.01
+Iteration 719: Cost 0.01: l_r 0.01
+Epoch 79: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 720: Cost 0.00: l_r 0.01
+Iteration 721: Cost 0.03: l_r 0.01
+Iteration 722: Cost 0.01: l_r 0.01
+Iteration 723: Cost 0.02: l_r 0.01
+Iteration 724: Cost 0.01: l_r 0.01
+Iteration 725: Cost 0.02: l_r 0.01
+Iteration 726: Cost 0.01: l_r 0.01
+Iteration 727: Cost 0.01: l_r 0.01
+Iteration 728: Cost 0.01: l_r 0.01
+Epoch 80: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 729: Cost 0.00: l_r 0.01
+Iteration 730: Cost 0.03: l_r 0.01
+Iteration 731: Cost 0.01: l_r 0.01
+Iteration 732: Cost 0.02: l_r 0.01
+Iteration 733: Cost 0.01: l_r 0.01
+Iteration 734: Cost 0.02: l_r 0.01
+Iteration 735: Cost 0.01: l_r 0.01
+Iteration 736: Cost 0.01: l_r 0.01
+Iteration 737: Cost 0.01: l_r 0.01
+Epoch 81: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 738: Cost 0.00: l_r 0.01
+Iteration 739: Cost 0.03: l_r 0.01
+Iteration 740: Cost 0.01: l_r 0.01
+Iteration 741: Cost 0.02: l_r 0.01
+Iteration 742: Cost 0.01: l_r 0.01
+Iteration 743: Cost 0.01: l_r 0.01
+Iteration 744: Cost 0.01: l_r 0.01
+Iteration 745: Cost 0.01: l_r 0.01
+Iteration 746: Cost 0.01: l_r 0.01
+Epoch 82: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 747: Cost 0.00: l_r 0.01
+Iteration 748: Cost 0.03: l_r 0.01
+Iteration 749: Cost 0.01: l_r 0.01
+Iteration 750: Cost 0.02: l_r 0.01
+Iteration 751: Cost 0.01: l_r 0.01
+Iteration 752: Cost 0.01: l_r 0.01
+Iteration 753: Cost 0.01: l_r 0.01
+Iteration 754: Cost 0.01: l_r 0.01
+Iteration 755: Cost 0.01: l_r 0.01
+Epoch 83: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 756: Cost 0.00: l_r 0.01
+Iteration 757: Cost 0.03: l_r 0.01
+Iteration 758: Cost 0.01: l_r 0.01
+Iteration 759: Cost 0.02: l_r 0.01
+Iteration 760: Cost 0.01: l_r 0.01
+Iteration 761: Cost 0.01: l_r 0.01
+Iteration 762: Cost 0.01: l_r 0.01
+Iteration 763: Cost 0.01: l_r 0.01
+Iteration 764: Cost 0.01: l_r 0.01
+Epoch 84: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 765: Cost 0.00: l_r 0.01
+Iteration 766: Cost 0.03: l_r 0.01
+Iteration 767: Cost 0.01: l_r 0.01
+Iteration 768: Cost 0.02: l_r 0.01
+Iteration 769: Cost 0.01: l_r 0.01
+Iteration 770: Cost 0.01: l_r 0.01
+Iteration 771: Cost 0.00: l_r 0.01
+Iteration 772: Cost 0.01: l_r 0.01
+Iteration 773: Cost 0.01: l_r 0.01
+Epoch 85: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 774: Cost 0.00: l_r 0.01
+Iteration 775: Cost 0.03: l_r 0.01
+Iteration 776: Cost 0.01: l_r 0.01
+Iteration 777: Cost 0.02: l_r 0.01
+Iteration 778: Cost 0.01: l_r 0.01
+Iteration 779: Cost 0.01: l_r 0.01
+Iteration 780: Cost 0.00: l_r 0.01
+Iteration 781: Cost 0.00: l_r 0.01
+Iteration 782: Cost 0.01: l_r 0.01
+Epoch 86: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 783: Cost 0.00: l_r 0.01
+Iteration 784: Cost 0.03: l_r 0.01
+Iteration 785: Cost 0.01: l_r 0.01
+Iteration 786: Cost 0.02: l_r 0.01
+Iteration 787: Cost 0.01: l_r 0.01
+Iteration 788: Cost 0.01: l_r 0.01
+Iteration 789: Cost 0.00: l_r 0.01
+Iteration 790: Cost 0.00: l_r 0.01
+Iteration 791: Cost 0.01: l_r 0.01
+Epoch 87: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 792: Cost 0.00: l_r 0.01
+Iteration 793: Cost 0.03: l_r 0.01
+Iteration 794: Cost 0.01: l_r 0.01
+Iteration 795: Cost 0.02: l_r 0.01
+Iteration 796: Cost 0.01: l_r 0.01
+Iteration 797: Cost 0.01: l_r 0.01
+Iteration 798: Cost 0.00: l_r 0.01
+Iteration 799: Cost 0.00: l_r 0.01
+Iteration 800: Cost 0.01: l_r 0.01
+Epoch 88: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 801: Cost 0.00: l_r 0.01
+Iteration 802: Cost 0.02: l_r 0.01
+Iteration 803: Cost 0.01: l_r 0.01
+Iteration 804: Cost 0.02: l_r 0.01
+Iteration 805: Cost 0.01: l_r 0.01
+Iteration 806: Cost 0.01: l_r 0.01
+Iteration 807: Cost 0.00: l_r 0.01
+Iteration 808: Cost 0.00: l_r 0.01
+Iteration 809: Cost 0.01: l_r 0.01
+Epoch 89: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 810: Cost 0.00: l_r 0.01
+Iteration 811: Cost 0.02: l_r 0.01
+Iteration 812: Cost 0.01: l_r 0.01
+Iteration 813: Cost 0.02: l_r 0.01
+Iteration 814: Cost 0.01: l_r 0.01
+Iteration 815: Cost 0.01: l_r 0.01
+Iteration 816: Cost 0.00: l_r 0.01
+Iteration 817: Cost 0.00: l_r 0.01
+Iteration 818: Cost 0.01: l_r 0.01
+Epoch 90: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 819: Cost 0.00: l_r 0.01
+Iteration 820: Cost 0.02: l_r 0.01
+Iteration 821: Cost 0.01: l_r 0.01
+Iteration 822: Cost 0.02: l_r 0.01
+Iteration 823: Cost 0.01: l_r 0.01
+Iteration 824: Cost 0.01: l_r 0.01
+Iteration 825: Cost 0.00: l_r 0.01
+Iteration 826: Cost 0.00: l_r 0.01
+Iteration 827: Cost 0.01: l_r 0.01
+Epoch 91: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 828: Cost 0.00: l_r 0.01
+Iteration 829: Cost 0.02: l_r 0.01
+Iteration 830: Cost 0.01: l_r 0.01
+Iteration 831: Cost 0.02: l_r 0.01
+Iteration 832: Cost 0.01: l_r 0.01
+Iteration 833: Cost 0.01: l_r 0.01
+Iteration 834: Cost 0.00: l_r 0.01
+Iteration 835: Cost 0.00: l_r 0.01
+Iteration 836: Cost 0.01: l_r 0.01
+Epoch 92: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 837: Cost 0.00: l_r 0.01
+Iteration 838: Cost 0.02: l_r 0.01
+Iteration 839: Cost 0.01: l_r 0.01
+Iteration 840: Cost 0.02: l_r 0.01
+Iteration 841: Cost 0.01: l_r 0.01
+Iteration 842: Cost 0.01: l_r 0.01
+Iteration 843: Cost 0.00: l_r 0.01
+Iteration 844: Cost 0.00: l_r 0.01
+Iteration 845: Cost 0.01: l_r 0.01
+Epoch 93: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 846: Cost 0.00: l_r 0.01
+Iteration 847: Cost 0.02: l_r 0.01
+Iteration 848: Cost 0.01: l_r 0.01
+Iteration 849: Cost 0.02: l_r 0.01
+Iteration 850: Cost 0.01: l_r 0.01
+Iteration 851: Cost 0.01: l_r 0.01
+Iteration 852: Cost 0.00: l_r 0.01
+Iteration 853: Cost 0.00: l_r 0.01
+Iteration 854: Cost 0.01: l_r 0.01
+Epoch 94: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 855: Cost 0.00: l_r 0.01
+Iteration 856: Cost 0.02: l_r 0.01
+Iteration 857: Cost 0.01: l_r 0.01
+Iteration 858: Cost 0.02: l_r 0.01
+Iteration 859: Cost 0.00: l_r 0.01
+Iteration 860: Cost 0.01: l_r 0.01
+Iteration 861: Cost 0.00: l_r 0.01
+Iteration 862: Cost 0.00: l_r 0.01
+Iteration 863: Cost 0.01: l_r 0.01
+Epoch 95: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 864: Cost 0.00: l_r 0.01
+Iteration 865: Cost 0.02: l_r 0.01
+Iteration 866: Cost 0.01: l_r 0.01
+Iteration 867: Cost 0.02: l_r 0.01
+Iteration 868: Cost 0.00: l_r 0.01
+Iteration 869: Cost 0.01: l_r 0.01
+Iteration 870: Cost 0.00: l_r 0.01
+Iteration 871: Cost 0.00: l_r 0.01
+Iteration 872: Cost 0.01: l_r 0.01
+Epoch 96: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 873: Cost 0.00: l_r 0.01
+Iteration 874: Cost 0.02: l_r 0.01
+Iteration 875: Cost 0.01: l_r 0.01
+Iteration 876: Cost 0.02: l_r 0.01
+Iteration 877: Cost 0.00: l_r 0.01
+Iteration 878: Cost 0.01: l_r 0.01
+Iteration 879: Cost 0.00: l_r 0.01
+Iteration 880: Cost 0.00: l_r 0.01
+Iteration 881: Cost 0.01: l_r 0.01
+Epoch 97: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 882: Cost 0.00: l_r 0.01
+Iteration 883: Cost 0.02: l_r 0.01
+Iteration 884: Cost 0.01: l_r 0.01
+Iteration 885: Cost 0.02: l_r 0.01
+Iteration 886: Cost 0.00: l_r 0.01
+Iteration 887: Cost 0.01: l_r 0.01
+Iteration 888: Cost 0.00: l_r 0.01
+Iteration 889: Cost 0.00: l_r 0.01
+Iteration 890: Cost 0.01: l_r 0.01
+Epoch 98: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Iteration 891: Cost 0.00: l_r 0.01
+Iteration 892: Cost 0.02: l_r 0.01
+Iteration 893: Cost 0.01: l_r 0.01
+Iteration 894: Cost 0.02: l_r 0.01
+Iteration 895: Cost 0.00: l_r 0.01
+Iteration 896: Cost 0.01: l_r 0.01
+Iteration 897: Cost 0.00: l_r 0.01
+Iteration 898: Cost 0.00: l_r 0.01
+Iteration 899: Cost 0.01: l_r 0.01
+Epoch 99: validation accuracy 99.67%
+This is the best validation accuracy to date.
+
+True Positive  =  90
+True Negative  =  209
+False Negative =  0
+False Positive =  1
+
+The corresponding test accuracy is 99.67%
+Finished training network.
+Best validation accuracy of 99.67% obtained at iteration 899
+Corresponding test accuracy of 99.67%
