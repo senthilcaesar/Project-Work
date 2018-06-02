@@ -44,6 +44,7 @@ def pop(x):
 x = [16, 10, 14, 2, 3, 5]
 buildHeap(x)
 n = len(x)
+''' Perform Heap sort in place '''
 for i in range(n-1, -1, -1):
      x[i], x[0] = x[0], x[i]
      heapify(x, 0, i)
