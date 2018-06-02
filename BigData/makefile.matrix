@@ -1,0 +1,13 @@
+CC      = icc -pthread
+CFLAGS  = -Wall -O3 -fopenmp
+NAME    = matrixMul
+
+$(NAME):        $(NAME).o
+                $(CC) $(CFLAGS) -g -o  $(NAME) $(NAME).o
+
+
+$(NAME).o:      $(NAME).c
+                $(CC) $(CFLAGS) -c -o $(NAME).o $(NAME).c
+
+clean:
+        rm *.o
