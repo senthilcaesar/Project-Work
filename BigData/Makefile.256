@@ -1,0 +1,32 @@
+CC=icc
+CCFLAGS=-Wall -O3 -xHost
+NAME = 256
+# You enable auto-vectorisation using -xhost
+# -O3 control the base line path
+CUDA_PATH       := /usr/local/cuda
+CUDA_INC_PATH   := $(CUDA_PATH)/include
+CUDA_BIN_PATH   := $(CUDA_PATH)/bin
+CUDA_LIB_PATH   := $(CUDA_PATH)/lib64
+NVCC            := $(CUDA_BIN_PATH)/nvcc
+
+NVCCFLAGS := -m64 -arch=compute_70 -code=sm_70 -O3
+INCLUDES  := -I$(CUDA_INC_PATH) -I$(CUDA_PATH)/samples/common/inc
+LDFLAGS   := -L$(CUDA_LIB_PATH) -lcudart
+
+#i%: %.c
+#        $(CC) $(CCFLAGS) -o $@ $<
+
+#%: %.cu
+#        $(NVCC) $(NVCCFLAGS) $(INCLUDES) $(LDFLAGS) -lcusolver -o $@ $<
+
+
+
+$(NAME):        $(NAME).o
+                $(CC) $(CFLAGS) -g -o $(NAME) $(NAME).o
+
+
+$(NAME).o:      $(NAME).c
+                $(CC) $(CFLAGS) -c -o $(NAME).o $(NAME).c
+
+clean:
+        rm *.o
