@@ -16,9 +16,9 @@ ser2 = pd.Series(data=[1,2,3,4], index=['USA','CHINA','ITALY','JAPAN'])
 
 # Data Frames
 df = pd.DataFrame(data=randn(5,4), index=['A','B','C','D','E'], columns=['w','x','y','z'])
-#print(df[['w','z']])
-#print(type(df['w']))
-#print(type(df))
+print(df[['w','z']])
+print(type(df['w']))
+print(type(df))
 
 # Create new column
 df['new'] = df['w'] + df['y']
@@ -57,8 +57,8 @@ df.reset_index(inplace=False)
 
 # Set Index
 newind = 'CA NY WY OR CO'.split()
-#df['States'] = newind
-#df.set_index('States', inplace=True)
+df['States'] = newind
+df.set_index('States', inplace=True)
 
 # Index levels
 outside = ['G1','G1', 'G1', 'G2', 'G2', 'G2']
@@ -81,3 +81,15 @@ df.dropna(axis=0)
 
 # Replace missing value with the mean of the column
 df['A'].fillna(value=df['A'].mean(), inplace=True)
+
+# Learn groupBy with Pandas
+data = {'Company':['GOOG','GOOG','MSFT','MSFT','FB','FB'],
+        'Person':['Sam','Charlie','Amy','Vanessa','Carl','Sarah'],
+        'Sales':[200,120,340,124,243,350]}
+
+df = pd.DataFrame(data)
+byComp = df.groupby('Company')
+# mean or average sales by company
+print(byComp.mean())
+# Describe will give a lot of informations
+print(df.groupby('Company').describe().transpose())
