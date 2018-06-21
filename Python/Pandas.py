@@ -7,14 +7,14 @@ my_list = [10, 20, 30]
 arr = np.array([10, 20, 30])
 d = {'a':10, 'b':20, 'c':100}
 
-# Series
+# ------------------------Series--------------------------
 series = pd.Series(my_list, index=labels)
 x = pd.Series(arr, labels)
 my_dict = pd.Series(d)
 ser1 = pd.Series(data=[1,2,3,4], index=['USA','CHINA','FRANCE','GERMANY'])
 ser2 = pd.Series(data=[1,2,3,4], index=['USA','CHINA','ITALY','JAPAN'])
 
-# Data Frames
+# -------------------------Data Frames------------------------------
 df = pd.DataFrame(data=randn(5,4), index=['A','B','C','D','E'], columns=['w','x','y','z'])
 print(df[['w','z']])
 print(type(df['w']))
@@ -60,7 +60,7 @@ newind = 'CA NY WY OR CO'.split()
 df['States'] = newind
 df.set_index('States', inplace=True)
 
-# Index levels
+# --------------------------Index levels------------------------------------
 outside = ['G1','G1', 'G1', 'G2', 'G2', 'G2']
 inside = [1,2,3,1,2,3]
 hier_index = list(zip(outside, inside))
@@ -69,7 +69,7 @@ df = pd.DataFrame(randn(6,2), hier_index, ['A', 'B'])
 df.index.names = ['Groups', 'Num']
 df.xs(1, level='Num')
 
-# Missing Data
+#--------------------------- Missing Data---------------------------------
 d = {'A':[1,2,np.nan], 'B':[5,np.nan,np.nan], 'C':[1,2,3]}
 df = pd.DataFrame(d)
 
@@ -94,7 +94,7 @@ print(byComp.mean())
 # Describe will give a lot of informations
 print(df.groupby('Company').describe().transpose())
 
-# Merging, Joining and Concatenating DataFrames
+# -------------------------Merging, Joining and Concatenating DataFrames---------------------------------
 df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],
                         'B': ['B0', 'B1', 'B2', 'B3'],
                         'C': ['C0', 'C1', 'C2', 'C3'],
@@ -154,3 +154,40 @@ right = pd.DataFrame({'C': ['C0', 'C2', 'C3'],
 # left join
 left.join(right)
 left.join(right, how='outer')
+
+# ------------------Pandas Common Operations-------------------------------
+d = {'col1':[1,2,3,4],
+     'col2':[444,555,666,444],
+     'col3':['abc','def','ghi','xyz']}
+
+df = pd.DataFrame(d)
+# Finding unique values in a DataFrame
+df['col2'].unique()
+# No of unique elements in a column
+df['col2'].nunique()
+# How many times each unique value appreared ina column
+df['col2'].value_counts()
+
+# Apply custom Method to DataFrames
+def times2(x):
+    return x*2
+df['col2'].apply(times2)
+
+# Corresponding lamba expression of times2 method
+express = lambda x:x*2
+df['col2'].apply(express)
+
+# Sorting and ordering in Data Frame
+df.sort_values(by='col2')
+
+# Find null values
+df.isnull()
+
+# Pivot Tables
+data = {'A':['foo','foo','foo','bar','bar','bar'],
+     'B':['one','one','two','two','one','one'],
+       'C':['x','y','x','y','x','y'],
+       'D':[1,3,2,5,4,1]}
+
+df = pd.DataFrame(data)
+df.pivot_table(values='D', index=['A','B'], columns=['C'])
