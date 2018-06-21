@@ -68,3 +68,16 @@ hier_index = pd.MultiIndex.from_tuples(hier_index)
 df = pd.DataFrame(randn(6,2), hier_index, ['A', 'B'])
 df.index.names = ['Groups', 'Num']
 df.xs(1, level='Num')
+
+# Missing Data
+d = {'A':[1,2,np.nan], 'B':[5,np.nan,np.nan], 'C':[1,2,3]}
+df = pd.DataFrame(d)
+
+# drop rows that has null value
+df.dropna(axis=1)
+
+# drop columns that has null value
+df.dropna(axis=0)
+
+# Replace missing value with the mean of the column
+df['A'].fillna(value=df['A'].mean(), inplace=True)
