@@ -1,9 +1,6 @@
 import java.util.Scanner;
 import java.io.*;
 
-// CS210 Project 3 SortCounter class
-// Bob Wilson 10/28/2015
-
 public class SortCounter
 {
   private static String dataFileName = null;
