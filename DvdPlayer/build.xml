@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant-DVDPlayer" default="run" basedir=".">
+
+
+	<!--Property element to specify properties for the project-->
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	<property name="test.dir" location="test/src" />
+	<property name="buildtest.dir" location="test/bin" />
+
+	<property environment="env"/>
+	<path id="test.classpath">
+	    <pathelement path="${env.JUNIT}"/>
+		<pathelement path="${env.HAMCREST_CORE}"/>
+	</path>
+	
+	
+	<target name="makedir">
+		<mkdir dir="${build.dir}" />
+	</target>
+	
+	<target name="makedirtest">
+		<mkdir dir="${buildtest.dir}" />
+	</target>
+	
+	
+	<target name="compile" depends="makedir, makedirtest">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+			<classpath refid="test.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="compileUnitTests" depends="compile">
+		<javac srcdir="${test.dir}" destdir="${buildtest.dir}" includeantruntime="false">
+			<classpath refid="test.classpath"/>
+			<classpath location="${build.dir}" />
+		</javac>
+	</target>
+
+	<target name="junit" depends="compileUnitTests">
+		<junit>
+			<!-- Project classpath, must include junit.jar -->
+			<classpath refid="test.classpath" />
+
+			<!-- Build class -->
+			<classpath location="${buildtest.dir}" />
+			<classpath location="${build.dir}" />
+			
+			<formatter type="plain" usefile="false" />
+			<batchtest fork="yes">
+				<fileset dir="${test.dir}">
+					<include name="**/*Test*.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<target name="run" depends="junit">
+	</target>	
+
+</project>
+
