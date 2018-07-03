@@ -1,5 +1,6 @@
-def lcs(X, Y, m, n):
- 
+''' Longest Common sequence Algorithm '''
+
+def lcs(X, Y, m, n): 
     if m == 0 or n == 0:
        return 0;
     elif X[m-1] == Y[n-1]:
