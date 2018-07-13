@@ -33,20 +33,3 @@ let tempConversion = function (farenhiet) {
 
 let tmp = tempConversion(32)
 console.log(tmp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
