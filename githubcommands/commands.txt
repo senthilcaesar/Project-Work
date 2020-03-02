@@ -1,0 +1,2 @@
+# clone branch
+git clone -b remove-ext-dep https://github.com/pnlbwh/CNN-Diffusion-MRIBrain-Segmentation
