@@ -96,3 +96,36 @@ print(df_clean_2['MARRIAGE'].value_counts())
 df_clean_2.groupby('EDUCATION').agg({'default payment next month': 'mean'}).plot.bar(legend=False)
 plt.ylabel('Default rate')
 plt.xlabel('Education level: ordinal encoding')
+
+# Implementing OHE
+# 1 = graduate Shcool
+# 2 = university
+# 3 = high school
+# 4 = others
+# Insted of doing the above ordinal encodgin for the different education labels
+# we will do one hot encoding
+df_clean_2['EDUCATION_CAT'] = 'none'
+print(df_clean_2[['EDUCATION', 'EDUCATION_CAT']].head(10))
+
+cat_mapping = {
+    1: "graduate school",
+    2: "university",
+    3: "high school",
+    4: "others"
+    }
+
+# map education numbers to strings
+# Examining the string values corresponding to the ordinal encoding of EDUCATION
+df_clean_2['EDUCATION_CAT'] = df_clean_2['EDUCATION'].map(cat_mapping)
+print(df_clean_2[['EDUCATION', 'EDUCATION_CAT']].head(10))
+
+# Now we are ready to perform OHE
+edu_ohe = pd.get_dummies(df_clean_2['EDUCATION_CAT'])
+print(edu_ohe.head(10))
+
+# concatenate OHE with df
+df_with_ohe = pd.concat([df_clean_2, edu_ohe], axis=1)
+print(df_with_ohe[['EDUCATION_CAT', 'graduate school',
+             'high school', 'university', 'others']].head(10))
+
+df_with_ohe.to_csv('Chapter_1_cleaned_data.csv', index=False)
